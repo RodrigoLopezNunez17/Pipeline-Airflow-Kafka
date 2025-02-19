@@ -1,5 +1,5 @@
 from confluent_kafka import Producer
-from datetime import datetime
+from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.decorators import task
 
@@ -26,6 +26,6 @@ def WeatherAPI():
 with DAG(
     dag_id="FirstDAG",
     start_date = datetime(2025, 2, 18),
-    schedule_interval = "*/5 * * * *"
+    schedule_interval = timedelta(seconds = 30)
 ) as dag:
     weatherTask = WeatherAPI()
