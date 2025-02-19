@@ -1,0 +1,78 @@
+[2025-02-17T22:31:38.101-0600] {processor.py:186} INFO - Started process (PID=19519) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:31:38.102-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:31:38.107-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.106-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:31:38.124-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:31:38.507-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.506-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_sla_dag
+[2025-02-17T22:31:38.527-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.526-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_sla_dag
+[2025-02-17T22:31:38.546-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.545-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_sla_dag
+[2025-02-17T22:31:38.576-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.576-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_sla_dag
+[2025-02-17T22:31:38.594-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.593-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_sla_dag
+[2025-02-17T22:31:38.610-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.609-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_sla_dag
+[2025-02-17T22:31:38.625-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.625-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_sla_dag
+[2025-02-17T22:31:38.626-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.625-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:31:38.646-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.646-0600] {dag.py:3262} INFO - Creating ORM DAG for example_sla_dag
+[2025-02-17T22:31:38.671-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:31:38.670-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:28:00+00:00, run_after=2025-02-18 04:30:00+00:00
+[2025-02-17T22:31:38.703-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.610 seconds
+[2025-02-17T22:33:00.318-0600] {processor.py:186} INFO - Started process (PID=20571) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:00.320-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:33:00.322-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:00.322-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:00.336-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:00.353-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:00.353-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:33:00.380-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:00.379-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:30:00+00:00, run_after=2025-02-18 04:32:00+00:00
+[2025-02-17T22:33:00.435-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.124 seconds
+[2025-02-17T22:33:40.598-0600] {processor.py:186} INFO - Started process (PID=21081) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:40.600-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:33:40.603-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:40.602-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:40.618-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:33:40.637-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:40.637-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:33:40.668-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:33:40.667-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:30:00+00:00, run_after=2025-02-18 04:32:00+00:00
+[2025-02-17T22:33:40.699-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.109 seconds
+[2025-02-17T22:34:40.410-0600] {processor.py:186} INFO - Started process (PID=21710) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:34:40.411-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:34:40.414-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:34:40.414-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:34:40.426-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:34:40.443-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:34:40.442-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:34:40.474-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:34:40.474-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:32:00+00:00, run_after=2025-02-18 04:34:00+00:00
+[2025-02-17T22:34:40.507-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.103 seconds
+[2025-02-17T22:35:44.296-0600] {processor.py:186} INFO - Started process (PID=22363) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:35:44.299-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:35:44.302-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:35:44.301-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:35:44.314-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:35:44.331-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:35:44.330-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:35:44.359-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:35:44.359-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:32:00+00:00, run_after=2025-02-18 04:34:00+00:00
+[2025-02-17T22:35:44.390-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.102 seconds
+[2025-02-17T22:36:45.628-0600] {processor.py:186} INFO - Started process (PID=22936) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:36:45.631-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:36:45.634-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:36:45.633-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:36:45.647-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:36:45.663-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:36:45.663-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:36:45.691-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:36:45.691-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:34:00+00:00, run_after=2025-02-18 04:36:00+00:00
+[2025-02-17T22:36:45.722-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.102 seconds
+[2025-02-17T22:37:43.058-0600] {processor.py:186} INFO - Started process (PID=23420) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:37:43.060-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:37:43.062-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:37:43.062-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:37:43.076-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:37:43.093-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:37:43.093-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:37:43.120-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:37:43.120-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:34:00+00:00, run_after=2025-02-18 04:36:00+00:00
+[2025-02-17T22:37:43.154-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.103 seconds
+[2025-02-17T22:38:38.425-0600] {processor.py:186} INFO - Started process (PID=23887) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:38:38.427-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:38:38.430-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:38:38.429-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:38:38.446-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:38:38.465-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:38:38.465-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:38:38.497-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:38:38.496-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:36:00+00:00, run_after=2025-02-18 04:38:00+00:00
+[2025-02-17T22:38:38.531-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.115 seconds
+[2025-02-17T22:39:41.062-0600] {processor.py:186} INFO - Started process (PID=24404) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:39:41.064-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:39:41.068-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:39:41.068-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:39:41.085-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:39:41.109-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:39:41.108-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:39:41.148-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:39:41.148-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:36:00+00:00, run_after=2025-02-18 04:38:00+00:00
+[2025-02-17T22:39:41.191-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.137 seconds
+[2025-02-17T22:40:42.591-0600] {processor.py:186} INFO - Started process (PID=24914) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:40:42.594-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py for tasks to queue
+[2025-02-17T22:40:42.598-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:40:42.597-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:40:42.616-0600] {processor.py:925} INFO - DAG(s) 'example_sla_dag' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py
+[2025-02-17T22:40:42.638-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:40:42.638-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-17T22:40:42.665-0600] {logging_mixin.py:190} INFO - [2025-02-17T22:40:42.665-0600] {dag.py:4180} INFO - Setting next_dagrun for example_sla_dag to 2025-02-18 04:38:00+00:00, run_after=2025-02-18 04:40:00+00:00
+[2025-02-17T22:40:42.701-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_sla_dag.py took 0.119 seconds
