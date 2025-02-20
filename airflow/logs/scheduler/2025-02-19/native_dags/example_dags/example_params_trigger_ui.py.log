@@ -1,0 +1,15 @@
+[2025-02-19T13:45:54.182-0600] {processor.py:186} INFO - Started process (PID=473318) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-19T13:45:54.183-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py for tasks to queue
+[2025-02-19T13:45:54.186-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.185-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-19T13:45:54.353-0600] {processor.py:925} INFO - DAG(s) 'example_params_trigger_ui' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py
+[2025-02-19T13:45:54.545-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.544-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_params_trigger_ui
+[2025-02-19T13:45:54.569-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.568-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_params_trigger_ui
+[2025-02-19T13:45:54.588-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.587-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_params_trigger_ui
+[2025-02-19T13:45:54.618-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.618-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_params_trigger_ui
+[2025-02-19T13:45:54.640-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.638-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_params_trigger_ui
+[2025-02-19T13:45:54.660-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.659-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_params_trigger_ui
+[2025-02-19T13:45:54.679-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.678-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_params_trigger_ui
+[2025-02-19T13:45:54.680-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.679-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:45:54.697-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.696-0600] {dag.py:3262} INFO - Creating ORM DAG for example_params_trigger_ui
+[2025-02-19T13:45:54.698-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:54.697-0600] {dag.py:4180} INFO - Setting next_dagrun for example_params_trigger_ui to None, run_after=None
+[2025-02-19T13:45:54.748-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_trigger_ui.py took 0.576 seconds

@@ -21,3 +21,4 @@ Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
 25/02/18 23:12:10 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://10.255.255.254:8080
 25/02/18 23:12:10 INFO Master: I have been elected leader! New state: ALIVE
 25/02/18 23:16:46 INFO Master: Registering worker 10.255.255.254:42019 with 8 cores, 2.5 GiB RAM
+25/02/19 00:16:01 ERROR Master: RECEIVED SIGNAL TERM

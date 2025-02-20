@@ -1,0 +1,22 @@
+[2025-02-19T13:45:01.283-0600] {processor.py:186} INFO - Started process (PID=472630) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:45:01.284-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2025-02-19T13:45:01.288-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.287-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:45:01.298-0600] {processor.py:925} INFO - DAG(s) 'example_time_delta_sensor_async' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:45:01.885-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.884-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_time_delta_sensor_async
+[2025-02-19T13:45:01.908-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.908-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_time_delta_sensor_async
+[2025-02-19T13:45:01.928-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.927-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_time_delta_sensor_async
+[2025-02-19T13:45:01.964-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.964-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_time_delta_sensor_async
+[2025-02-19T13:45:01.983-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:01.982-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_time_delta_sensor_async
+[2025-02-19T13:45:02.007-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:02.006-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_time_delta_sensor_async
+[2025-02-19T13:45:02.031-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:02.031-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_time_delta_sensor_async
+[2025-02-19T13:45:02.033-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:02.032-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:45:02.059-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:02.058-0600] {dag.py:3262} INFO - Creating ORM DAG for example_time_delta_sensor_async
+[2025-02-19T13:45:02.060-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:02.060-0600] {dag.py:4180} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2025-02-19T13:45:02.100-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 0.828 seconds
+[2025-02-19T13:46:27.717-0600] {processor.py:186} INFO - Started process (PID=473593) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:46:27.721-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2025-02-19T13:46:27.725-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:27.724-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:46:27.737-0600] {processor.py:925} INFO - DAG(s) 'example_time_delta_sensor_async' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2025-02-19T13:46:27.762-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:27.762-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:46:27.782-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:27.781-0600] {dag.py:4180} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2025-02-19T13:46:27.824-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 0.119 seconds

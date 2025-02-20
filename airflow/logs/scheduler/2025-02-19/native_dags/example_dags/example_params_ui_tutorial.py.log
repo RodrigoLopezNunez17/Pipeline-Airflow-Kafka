@@ -1,0 +1,22 @@
+[2025-02-19T13:45:26.529-0600] {processor.py:186} INFO - Started process (PID=472978) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:45:26.530-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-02-19T13:45:26.534-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:26.533-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:45:26.548-0600] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:45:27.005-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.004-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2025-02-19T13:45:27.027-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.027-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2025-02-19T13:45:27.051-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.050-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2025-02-19T13:45:27.081-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.081-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_params_ui_tutorial
+[2025-02-19T13:45:27.098-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.097-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_params_ui_tutorial
+[2025-02-19T13:45:27.117-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.116-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_params_ui_tutorial
+[2025-02-19T13:45:27.140-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.139-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_params_ui_tutorial
+[2025-02-19T13:45:27.141-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.141-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:45:27.159-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.159-0600] {dag.py:3262} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2025-02-19T13:45:27.160-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:27.160-0600] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-02-19T13:45:27.201-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.683 seconds
+[2025-02-19T13:46:43.459-0600] {processor.py:186} INFO - Started process (PID=473680) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:46:43.463-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-02-19T13:46:43.468-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:43.467-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:46:43.482-0600] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-02-19T13:46:43.558-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:43.557-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:46:43.580-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:46:43.580-0600] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-02-19T13:46:43.621-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.170 seconds

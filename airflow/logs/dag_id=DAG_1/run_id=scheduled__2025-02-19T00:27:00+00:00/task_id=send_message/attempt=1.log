@@ -1,0 +1,17 @@
+[2025-02-19T14:07:03.951-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-19T14:07:03.966-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: DAG_1.send_message scheduled__2025-02-19T00:27:00+00:00 [queued]>
+[2025-02-19T14:07:03.976-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: DAG_1.send_message scheduled__2025-02-19T00:27:00+00:00 [queued]>
+[2025-02-19T14:07:03.977-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-19T14:07:04.002-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): send_message> on 2025-02-19 00:27:00+00:00
+[2025-02-19T14:07:04.007-0600] {standard_task_runner.py:72} INFO - Started process 487187 to run task
+[2025-02-19T14:07:04.013-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'DAG_1', 'send_message', 'scheduled__2025-02-19T00:27:00+00:00', '--job-id', '318', '--raw', '--subdir', 'DAGS_FOLDER/dag_1.py', '--cfg-path', '/tmp/tmpekeydi5y']
+[2025-02-19T14:07:04.015-0600] {standard_task_runner.py:105} INFO - Job 318: Subtask send_message
+[2025-02-19T14:07:04.071-0600] {task_command.py:467} INFO - Running <TaskInstance: DAG_1.send_message scheduled__2025-02-19T00:27:00+00:00 [running]> on host IMNOTROY.
+[2025-02-19T14:07:04.194-0600] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='DAG_1' AIRFLOW_CTX_TASK_ID='send_message' AIRFLOW_CTX_EXECUTION_DATE='2025-02-19T00:27:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-19T00:27:00+00:00'
+[2025-02-19T14:07:04.195-0600] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-19T14:07:04.213-0600] {python.py:240} INFO - Done. Returned value was: Done!
+[2025-02-19T14:07:04.243-0600] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-19T14:07:04.244-0600] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=DAG_1, task_id=send_message, run_id=scheduled__2025-02-19T00:27:00+00:00, execution_date=20250219T002700, start_date=20250219T200703, end_date=20250219T200704
+[2025-02-19T14:07:04.308-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-19T14:07:04.326-0600] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-19T14:07:04.327-0600] {local_task_job_runner.py:245} INFO - ::endgroup::

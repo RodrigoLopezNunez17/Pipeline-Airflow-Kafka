@@ -1,0 +1,15 @@
+[2025-02-19T13:45:45.255-0600] {processor.py:186} INFO - Started process (PID=473197) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-19T13:45:45.257-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2025-02-19T13:45:45.263-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:45.261-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-19T13:45:46.008-0600] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2025-02-19T13:45:46.351-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.349-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_dag_decorator
+[2025-02-19T13:45:46.413-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.412-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_dag_decorator
+[2025-02-19T13:45:46.444-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.442-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_dag_decorator
+[2025-02-19T13:45:46.493-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.492-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_dag_decorator
+[2025-02-19T13:45:46.524-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.523-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_dag_decorator
+[2025-02-19T13:45:46.569-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.568-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_dag_decorator
+[2025-02-19T13:45:46.605-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.603-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_dag_decorator
+[2025-02-19T13:45:46.606-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.605-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:45:46.648-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.647-0600] {dag.py:3262} INFO - Creating ORM DAG for example_dag_decorator
+[2025-02-19T13:45:46.650-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:46.649-0600] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2025-02-19T13:45:46.715-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 1.493 seconds

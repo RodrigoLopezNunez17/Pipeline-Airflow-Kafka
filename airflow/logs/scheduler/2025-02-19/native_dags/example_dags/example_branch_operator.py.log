@@ -1,0 +1,22 @@
+[2025-02-19T13:45:34.433-0600] {processor.py:186} INFO - Started process (PID=473115) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:45:34.434-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2025-02-19T13:45:34.439-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:34.438-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:45:34.476-0600] {processor.py:925} INFO - DAG(s) 'example_branch_operator' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:45:34.895-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:34.894-0600] {override.py:1930} INFO - Created Permission View: can edit on DAG:example_branch_operator
+[2025-02-19T13:45:34.928-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:34.927-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG:example_branch_operator
+[2025-02-19T13:45:34.953-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:34.953-0600] {override.py:1930} INFO - Created Permission View: can read on DAG:example_branch_operator
+[2025-02-19T13:45:34.990-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:34.988-0600] {override.py:1930} INFO - Created Permission View: can delete on DAG Run:example_branch_operator
+[2025-02-19T13:45:35.010-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.009-0600] {override.py:1930} INFO - Created Permission View: menu access on DAG Run:example_branch_operator
+[2025-02-19T13:45:35.028-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.027-0600] {override.py:1930} INFO - Created Permission View: can create on DAG Run:example_branch_operator
+[2025-02-19T13:45:35.046-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.045-0600] {override.py:1930} INFO - Created Permission View: can read on DAG Run:example_branch_operator
+[2025-02-19T13:45:35.047-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.046-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:45:35.062-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.062-0600] {dag.py:3262} INFO - Creating ORM DAG for example_branch_operator
+[2025-02-19T13:45:35.082-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:45:35.081-0600] {dag.py:4180} INFO - Setting next_dagrun for example_branch_operator to 2025-02-18 00:00:00+00:00, run_after=2025-02-19 00:00:00+00:00
+[2025-02-19T13:45:35.124-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 0.704 seconds
+[2025-02-19T13:47:05.552-0600] {processor.py:186} INFO - Started process (PID=473788) to work on /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:47:05.556-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2025-02-19T13:47:05.560-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:47:05.559-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:47:05.589-0600] {processor.py:925} INFO - DAG(s) 'example_branch_operator' retrieved from /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py
+[2025-02-19T13:47:05.626-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:47:05.626-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T13:47:05.667-0600] {logging_mixin.py:190} INFO - [2025-02-19T13:47:05.666-0600] {dag.py:4180} INFO - Setting next_dagrun for example_branch_operator to 2025-02-18 00:00:00+00:00, run_after=2025-02-19 00:00:00+00:00
+[2025-02-19T13:47:05.752-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/example_dags/example_branch_operator.py took 0.210 seconds
