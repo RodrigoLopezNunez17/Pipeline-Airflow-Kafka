@@ -206,3 +206,747 @@
 [2025-02-19T21:31:19.453-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:31:19.453-0600] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-02-19T21:31:19.496-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:31:19.495-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
 [2025-02-19T21:31:19.530-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.189 seconds
+[2025-02-19T21:31:49.829-0600] {processor.py:186} INFO - Started process (PID=14705) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:31:49.838-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:31:49.857-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:31:49.854-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:31:49.941-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:31:49.953-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:31:50.046-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:31:50.046-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:31:50.115-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:31:50.114-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:31:50.157-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.381 seconds
+[2025-02-19T21:32:20.361-0600] {processor.py:186} INFO - Started process (PID=15210) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:20.363-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:32:20.367-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:20.367-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:20.382-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:32:20.386-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:20.411-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:20.411-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:32:20.438-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:20.438-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:32:20.473-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.122 seconds
+[2025-02-19T21:32:50.703-0600] {processor.py:186} INFO - Started process (PID=15467) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:50.704-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:32:50.709-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:50.708-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:50.726-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:32:50.730-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:32:50.759-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:50.759-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:32:50.786-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:32:50.786-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:32:50.817-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.123 seconds
+[2025-02-19T21:33:21.001-0600] {processor.py:186} INFO - Started process (PID=15633) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:21.007-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:33:21.010-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:21.009-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:21.027-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:33:21.031-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:21.061-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:21.061-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:33:21.088-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:21.088-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:33:21.125-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.134 seconds
+[2025-02-19T21:33:51.306-0600] {processor.py:186} INFO - Started process (PID=15938) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:51.308-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:33:51.312-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:51.311-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:51.338-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:33:51.342-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:33:51.377-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:51.376-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:33:51.426-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:33:51.425-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:33:51.459-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.163 seconds
+[2025-02-19T21:34:21.525-0600] {processor.py:186} INFO - Started process (PID=16110) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:21.529-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:34:21.532-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:21.531-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:21.548-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:34:21.551-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:21.601-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:21.601-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:34:21.647-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:21.646-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:34:21.684-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.176 seconds
+[2025-02-19T21:34:51.825-0600] {processor.py:186} INFO - Started process (PID=16346) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:51.827-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:34:51.832-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:51.831-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:51.850-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:34:51.854-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:34:51.892-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:51.891-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:34:51.937-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:34:51.936-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:34:51.977-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.160 seconds
+[2025-02-19T21:35:22.121-0600] {processor.py:186} INFO - Started process (PID=16515) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:22.123-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:35:22.126-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:22.125-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:22.139-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:35:22.143-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:22.174-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:22.174-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:35:22.204-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:22.204-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:35:22.239-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.129 seconds
+[2025-02-19T21:35:52.421-0600] {processor.py:186} INFO - Started process (PID=16754) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:52.423-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:35:52.426-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:52.425-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:52.441-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:35:52.447-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:35:52.474-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:52.474-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:35:52.506-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:35:52.506-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:35:52.540-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.128 seconds
+[2025-02-19T21:36:22.737-0600] {processor.py:186} INFO - Started process (PID=16924) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:22.738-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:36:22.744-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:22.743-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:22.769-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:36:22.773-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:22.810-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:22.810-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:36:22.856-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:22.856-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:36:22.899-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.176 seconds
+[2025-02-19T21:36:53.033-0600] {processor.py:186} INFO - Started process (PID=17159) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:53.035-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:36:53.038-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:53.037-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:53.051-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:36:53.055-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:36:53.083-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:53.082-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:36:53.115-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:36:53.114-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:36:53.170-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.147 seconds
+[2025-02-19T21:37:23.342-0600] {processor.py:186} INFO - Started process (PID=17331) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:23.343-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:37:23.350-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:23.349-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:23.377-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:37:23.383-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:23.428-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:23.428-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:37:23.673-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:23.672-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:37:23.715-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.389 seconds
+[2025-02-19T21:37:53.847-0600] {processor.py:186} INFO - Started process (PID=17571) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:53.849-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:37:53.852-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:53.851-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:53.869-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:37:53.874-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:37:53.903-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:53.903-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:37:53.936-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:37:53.936-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:37:53.978-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.141 seconds
+[2025-02-19T21:38:24.226-0600] {processor.py:186} INFO - Started process (PID=17738) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:24.227-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:38:24.233-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:24.232-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:24.256-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:38:24.260-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:24.297-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:24.296-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:38:24.334-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:24.334-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:38:24.371-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.153 seconds
+[2025-02-19T21:38:54.546-0600] {processor.py:186} INFO - Started process (PID=18042) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:54.549-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:38:54.554-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:54.553-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:54.569-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:38:54.574-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:38:54.626-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:54.625-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:38:54.659-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:38:54.658-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:38:54.701-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.170 seconds
+[2025-02-19T21:39:24.856-0600] {processor.py:186} INFO - Started process (PID=18215) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:24.858-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:39:24.864-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:24.863-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:24.882-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:39:24.885-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:24.965-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:24.965-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:39:24.999-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:24.999-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:39:25.034-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.189 seconds
+[2025-02-19T21:39:55.150-0600] {processor.py:186} INFO - Started process (PID=18447) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:55.153-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:39:55.157-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:55.156-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:55.181-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:39:55.185-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:39:55.214-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:55.213-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:39:55.245-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:39:55.244-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:39:55.276-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.135 seconds
+[2025-02-19T21:40:25.454-0600] {processor.py:186} INFO - Started process (PID=18869) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:25.457-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:40:25.460-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:25.460-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:25.475-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:40:25.478-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:25.507-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:25.507-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:40:25.533-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:25.533-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:40:25.573-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.128 seconds
+[2025-02-19T21:40:55.744-0600] {processor.py:186} INFO - Started process (PID=19246) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:55.746-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:40:55.749-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:55.748-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:55.763-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:40:55.766-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:40:55.795-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:55.795-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:40:55.836-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:40:55.835-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:40:55.889-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.154 seconds
+[2025-02-19T21:41:26.048-0600] {processor.py:186} INFO - Started process (PID=19688) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:26.049-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:41:26.052-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:26.052-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:26.067-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:41:26.070-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:26.098-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:26.097-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:41:26.130-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:26.130-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:41:26.167-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.128 seconds
+[2025-02-19T21:41:56.347-0600] {processor.py:186} INFO - Started process (PID=20253) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:56.350-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:41:56.354-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:56.354-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:56.371-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:41:56.375-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:41:56.410-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:56.410-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:41:56.443-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:41:56.443-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:41:56.478-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.139 seconds
+[2025-02-19T21:42:27.011-0600] {processor.py:186} INFO - Started process (PID=20650) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:27.031-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:42:27.130-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:27.118-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:27.542-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:42:27.606-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:28.116-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:28.115-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:42:28.344-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:28.343-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:42:28.460-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 1.751 seconds
+[2025-02-19T21:42:58.714-0600] {processor.py:186} INFO - Started process (PID=21218) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:58.720-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:42:58.737-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:58.730-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:58.807-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:42:58.819-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:42:58.889-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:58.888-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:42:58.943-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:42:58.943-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:42:58.986-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.299 seconds
+[2025-02-19T21:43:29.380-0600] {processor.py:186} INFO - Started process (PID=21852) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:43:29.394-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:43:29.419-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:43:29.414-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:43:29.619-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:43:29.647-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:43:30.101-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:43:30.100-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:43:30.332-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:43:30.331-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:43:30.443-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 1.139 seconds
+[2025-02-19T21:44:00.718-0600] {processor.py:186} INFO - Started process (PID=22482) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:00.721-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:44:00.734-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:00.732-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:00.784-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:44:00.795-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:00.855-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:00.854-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:44:00.892-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:00.892-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:44:00.927-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.228 seconds
+[2025-02-19T21:44:31.157-0600] {processor.py:186} INFO - Started process (PID=23069) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:31.162-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:44:31.195-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:31.189-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:31.326-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:44:31.355-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:44:31.478-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:31.478-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:44:31.563-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:44:31.562-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:44:31.642-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.521 seconds
+[2025-02-19T21:45:01.843-0600] {processor.py:186} INFO - Started process (PID=23297) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:01.847-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:45:01.857-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:01.856-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:01.893-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:45:01.900-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:01.958-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:01.957-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:45:02.006-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:02.006-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:45:02.047-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.233 seconds
+[2025-02-19T21:45:32.246-0600] {processor.py:186} INFO - Started process (PID=23458) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:32.249-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:45:32.257-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:32.256-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:32.302-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:45:32.308-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:45:32.389-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:32.389-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:45:32.451-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:45:32.450-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:45:32.495-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.282 seconds
+[2025-02-19T21:46:02.566-0600] {processor.py:186} INFO - Started process (PID=23690) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:02.567-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:46:02.571-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:02.570-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:02.616-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:46:02.625-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:02.701-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:02.701-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:46:02.748-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:02.748-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:46:02.795-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.239 seconds
+[2025-02-19T21:46:32.994-0600] {processor.py:186} INFO - Started process (PID=23855) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:32.997-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:46:33.001-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:33.000-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:33.030-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:46:33.042-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:46:33.126-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:33.126-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:46:33.185-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:46:33.184-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:46:33.240-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.272 seconds
+[2025-02-19T21:47:03.360-0600] {processor.py:186} INFO - Started process (PID=24085) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:03.361-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:47:03.371-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:03.370-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:03.385-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:47:03.388-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:03.418-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:03.418-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:47:03.443-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:03.443-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:47:03.475-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.147 seconds
+[2025-02-19T21:47:33.596-0600] {processor.py:186} INFO - Started process (PID=24248) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:33.600-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:47:33.603-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:33.602-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:33.619-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:47:33.623-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:47:33.655-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:33.655-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:47:33.698-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:47:33.697-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:47:33.745-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.157 seconds
+[2025-02-19T21:48:03.917-0600] {processor.py:186} INFO - Started process (PID=24481) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:03.920-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:48:03.924-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:03.923-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:03.937-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:48:03.941-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:03.968-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:03.967-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:48:04.014-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:04.013-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:48:04.067-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.158 seconds
+[2025-02-19T21:48:34.224-0600] {processor.py:186} INFO - Started process (PID=24708) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:34.226-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:48:34.229-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:34.229-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:34.246-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:48:34.250-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:48:34.278-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:34.278-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:48:34.309-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:48:34.308-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:48:34.345-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.132 seconds
+[2025-02-19T21:49:04.570-0600] {processor.py:186} INFO - Started process (PID=24938) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:04.573-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:49:04.582-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:04.581-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:04.616-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:49:04.622-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:04.760-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:04.759-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:49:04.824-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:04.824-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:49:04.886-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.352 seconds
+[2025-02-19T21:49:35.062-0600] {processor.py:186} INFO - Started process (PID=25129) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:35.066-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:49:35.069-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:35.068-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:35.084-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:49:35.088-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:49:35.167-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:35.166-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:49:35.251-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:49:35.251-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:49:35.319-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.274 seconds
+[2025-02-19T21:50:05.477-0600] {processor.py:186} INFO - Started process (PID=25335) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:05.478-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:50:05.484-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:05.483-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:05.498-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:50:05.502-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:05.539-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:05.538-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:50:05.572-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:05.571-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:50:05.617-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.160 seconds
+[2025-02-19T21:50:35.764-0600] {processor.py:186} INFO - Started process (PID=25555) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:35.767-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:50:35.770-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:35.770-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:35.785-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:50:35.789-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:50:35.838-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:35.838-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:50:35.921-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:50:35.921-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:50:35.976-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.223 seconds
+[2025-02-19T21:51:06.169-0600] {processor.py:186} INFO - Started process (PID=25729) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:06.174-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:51:06.178-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:06.177-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:06.197-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:51:06.201-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:06.233-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:06.233-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:51:06.268-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:06.267-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:51:06.317-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.157 seconds
+[2025-02-19T21:51:36.486-0600] {processor.py:186} INFO - Started process (PID=25955) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:36.488-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:51:36.491-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:36.490-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:36.507-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:51:36.512-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:51:36.546-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:36.545-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:51:36.586-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:51:36.586-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:51:36.620-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.146 seconds
+[2025-02-19T21:52:06.792-0600] {processor.py:186} INFO - Started process (PID=26122) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:06.794-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:52:06.797-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:06.797-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:06.813-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:52:06.817-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:06.846-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:06.845-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:52:06.886-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:06.886-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:52:06.928-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.146 seconds
+[2025-02-19T21:52:37.106-0600] {processor.py:186} INFO - Started process (PID=26348) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:37.110-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:52:37.114-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:37.113-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:37.128-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:52:37.132-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:52:37.161-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:37.161-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:52:37.189-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:52:37.189-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:52:37.225-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.131 seconds
+[2025-02-19T21:53:07.405-0600] {processor.py:186} INFO - Started process (PID=26515) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:07.408-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:53:07.411-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:07.411-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:07.429-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:53:07.434-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:07.471-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:07.470-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:53:07.523-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:07.523-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:53:07.579-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.187 seconds
+[2025-02-19T21:53:37.707-0600] {processor.py:186} INFO - Started process (PID=26768) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:37.709-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:53:37.713-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:37.712-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:37.730-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:53:37.733-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:53:37.761-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:37.761-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:53:37.791-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:53:37.790-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:53:37.825-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.129 seconds
+[2025-02-19T21:54:07.997-0600] {processor.py:186} INFO - Started process (PID=26974) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:07.999-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:54:08.003-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:08.002-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:08.016-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:54:08.021-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:08.048-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:08.047-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:54:08.097-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:08.097-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:54:08.143-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.154 seconds
+[2025-02-19T21:54:38.294-0600] {processor.py:186} INFO - Started process (PID=27207) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:38.296-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:54:38.299-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:38.298-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:38.313-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:54:38.316-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:54:38.342-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:38.341-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:54:38.370-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:54:38.369-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:54:38.401-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.115 seconds
+[2025-02-19T21:55:08.602-0600] {processor.py:186} INFO - Started process (PID=27373) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:08.603-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:55:08.606-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:08.606-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:08.621-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:55:08.624-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:08.664-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:08.663-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:55:08.741-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:08.740-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:55:08.779-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.188 seconds
+[2025-02-19T21:55:38.907-0600] {processor.py:186} INFO - Started process (PID=27600) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:38.909-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:55:38.912-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:38.911-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:38.926-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:55:38.930-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:55:38.957-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:38.956-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:55:38.989-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:55:38.988-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:55:39.022-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.123 seconds
+[2025-02-19T21:56:09.211-0600] {processor.py:186} INFO - Started process (PID=27767) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:09.213-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:56:09.216-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:09.216-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:09.231-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:56:09.234-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:09.261-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:09.261-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:56:09.286-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:09.286-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:56:09.317-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.116 seconds
+[2025-02-19T21:56:39.505-0600] {processor.py:186} INFO - Started process (PID=27999) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:39.507-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:56:39.511-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:39.510-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:39.525-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:56:39.529-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:56:39.558-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:39.558-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:56:39.584-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:56:39.584-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:56:39.633-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.137 seconds
+[2025-02-19T21:57:09.805-0600] {processor.py:186} INFO - Started process (PID=28163) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:09.809-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:57:09.812-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:09.812-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:09.827-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:57:09.831-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:09.862-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:09.862-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:57:09.890-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:09.890-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:57:09.923-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.129 seconds
+[2025-02-19T21:57:40.092-0600] {processor.py:186} INFO - Started process (PID=28392) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:40.094-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:57:40.098-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:40.098-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:40.112-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:57:40.115-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:57:40.142-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:40.142-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:57:40.174-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:57:40.174-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:57:40.207-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.123 seconds
+[2025-02-19T21:58:10.389-0600] {processor.py:186} INFO - Started process (PID=28559) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:10.391-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:58:10.394-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:10.394-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:10.409-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:58:10.413-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:10.440-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:10.440-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:58:10.467-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:10.467-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:58:10.501-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.120 seconds
+[2025-02-19T21:58:40.693-0600] {processor.py:186} INFO - Started process (PID=28857) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:40.696-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:58:40.701-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:40.700-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:40.714-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:58:40.719-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:58:40.747-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:40.747-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:58:40.773-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:58:40.773-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:58:40.805-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.121 seconds
+[2025-02-19T21:59:10.999-0600] {processor.py:186} INFO - Started process (PID=29024) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:11.001-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:59:11.004-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:11.003-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:11.017-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:59:11.021-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:11.046-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:11.045-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:59:11.075-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:11.075-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:59:11.113-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.122 seconds
+[2025-02-19T21:59:41.308-0600] {processor.py:186} INFO - Started process (PID=29250) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:41.311-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T21:59:41.314-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:41.313-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:41.330-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T21:59:41.334-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T21:59:41.369-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:41.369-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T21:59:41.405-0600] {logging_mixin.py:190} INFO - [2025-02-19T21:59:41.405-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T21:59:41.441-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.143 seconds
+[2025-02-19T22:00:11.605-0600] {processor.py:186} INFO - Started process (PID=29417) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:11.607-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:00:11.610-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:11.610-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:11.624-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:00:11.628-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:11.655-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:11.654-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:00:11.686-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:11.686-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:00:11.718-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.121 seconds
+[2025-02-19T22:00:41.896-0600] {processor.py:186} INFO - Started process (PID=29649) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:41.898-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:00:41.902-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:41.902-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:41.916-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:00:41.919-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:00:41.947-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:41.947-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:00:41.979-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:00:41.979-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:00:42.019-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.131 seconds
+[2025-02-19T22:01:12.172-0600] {processor.py:186} INFO - Started process (PID=29816) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:12.174-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:01:12.177-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:12.177-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:12.194-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:01:12.199-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:12.228-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:12.228-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:01:12.268-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:12.267-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:01:12.303-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.140 seconds
+[2025-02-19T22:01:42.535-0600] {processor.py:186} INFO - Started process (PID=30084) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:42.546-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:01:42.561-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:42.560-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:42.617-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:01:42.627-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:01:42.683-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:42.683-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:01:42.757-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:01:42.756-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:01:42.804-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.309 seconds
+[2025-02-19T22:02:13.013-0600] {processor.py:186} INFO - Started process (PID=30252) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:13.016-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:02:13.021-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:13.020-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:13.046-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:02:13.056-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:13.112-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:13.112-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:02:13.147-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:13.146-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:02:13.181-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.187 seconds
+[2025-02-19T22:02:43.352-0600] {processor.py:186} INFO - Started process (PID=30484) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:43.354-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:02:43.358-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:43.357-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:43.379-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:02:43.383-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:02:43.422-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:43.422-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:02:43.460-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:02:43.459-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:02:43.490-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.153 seconds
+[2025-02-19T22:03:13.664-0600] {processor.py:186} INFO - Started process (PID=30649) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:13.666-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:03:13.671-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:13.670-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:13.695-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:03:13.700-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:13.739-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:13.739-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:03:13.805-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:13.804-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:03:13.852-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.203 seconds
+[2025-02-19T22:03:44.093-0600] {processor.py:186} INFO - Started process (PID=30944) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:44.095-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:03:44.101-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:44.100-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:44.120-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:03:44.125-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:03:44.176-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:44.175-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:03:44.216-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:03:44.214-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:03:44.273-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.199 seconds
+[2025-02-19T22:04:14.495-0600] {processor.py:186} INFO - Started process (PID=31111) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:14.500-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:04:14.504-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:14.503-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:14.524-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:04:14.530-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:14.565-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:14.564-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:04:14.600-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:14.599-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:04:14.634-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.158 seconds
+[2025-02-19T22:04:44.816-0600] {processor.py:186} INFO - Started process (PID=31344) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:44.818-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:04:44.823-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:44.822-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:44.843-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:04:44.848-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:04:44.888-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:44.887-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:04:44.925-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:04:44.925-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:04:44.970-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.166 seconds
+[2025-02-19T22:05:15.268-0600] {processor.py:186} INFO - Started process (PID=31609) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:15.274-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:05:15.298-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:15.292-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:15.402-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:05:15.419-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:15.524-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:15.524-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:05:15.603-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:15.602-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:05:15.649-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.429 seconds
+[2025-02-19T22:05:45.898-0600] {processor.py:186} INFO - Started process (PID=31843) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:45.902-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:05:45.906-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:45.905-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:45.922-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:05:45.926-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:05:45.963-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:45.963-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:05:45.998-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:05:45.998-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:05:46.034-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.188 seconds
+[2025-02-19T22:06:16.157-0600] {processor.py:186} INFO - Started process (PID=32009) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:16.158-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:06:16.163-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:16.162-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:16.177-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:06:16.181-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:16.209-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:16.208-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:06:16.235-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:16.235-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:06:16.271-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.124 seconds
+[2025-02-19T22:06:46.489-0600] {processor.py:186} INFO - Started process (PID=32236) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:46.493-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:06:46.502-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:46.500-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:46.537-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:06:46.545-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:06:46.595-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:46.594-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:06:46.632-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:06:46.632-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:06:46.666-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.197 seconds
+[2025-02-19T22:07:16.894-0600] {processor.py:186} INFO - Started process (PID=32403) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:16.896-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:07:16.900-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:16.899-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:16.921-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:07:16.925-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:16.958-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:16.957-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:07:16.992-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:16.992-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:07:17.026-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.145 seconds
+[2025-02-19T22:07:47.184-0600] {processor.py:186} INFO - Started process (PID=32663) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:47.185-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:07:47.188-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:47.188-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:47.203-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:07:47.206-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:07:47.234-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:47.234-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:07:47.269-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:07:47.269-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:07:47.301-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.126 seconds
+[2025-02-19T22:08:17.486-0600] {processor.py:186} INFO - Started process (PID=32830) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:17.488-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:08:17.492-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:17.492-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:17.506-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:08:17.509-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:17.542-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:17.542-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:08:17.584-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:17.583-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:08:17.620-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.144 seconds
+[2025-02-19T22:08:47.800-0600] {processor.py:186} INFO - Started process (PID=33307) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:47.803-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:08:47.808-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:47.808-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:47.837-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:08:47.843-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:08:47.893-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:47.893-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:08:47.942-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:08:47.942-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:08:47.981-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.194 seconds
+[2025-02-19T22:09:18.130-0600] {processor.py:186} INFO - Started process (PID=33620) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:18.133-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:09:18.141-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:18.140-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:18.178-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:09:18.187-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:18.252-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:18.252-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:09:18.299-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:18.298-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:09:18.338-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.229 seconds
+[2025-02-19T22:09:48.545-0600] {processor.py:186} INFO - Started process (PID=34081) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:48.547-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:09:48.554-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:48.552-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:48.607-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:09:48.615-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:09:48.671-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:48.670-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:09:48.709-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:09:48.708-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:09:48.744-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.220 seconds
+[2025-02-19T22:10:18.952-0600] {processor.py:186} INFO - Started process (PID=34385) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:18.954-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:10:18.958-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:18.957-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:18.979-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:10:18.983-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:19.024-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:19.024-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:10:19.067-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:19.067-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:10:19.108-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.176 seconds
+[2025-02-19T22:10:49.291-0600] {processor.py:186} INFO - Started process (PID=34714) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:49.293-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:10:49.301-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:49.300-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:49.332-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:10:49.337-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:10:49.392-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:49.391-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:10:49.432-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:10:49.432-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:10:49.478-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.215 seconds
+[2025-02-19T22:11:19.705-0600] {processor.py:186} INFO - Started process (PID=34881) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:19.710-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:11:19.716-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:19.716-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:19.745-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:11:19.752-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:19.800-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:19.799-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:11:19.869-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:19.869-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:11:19.926-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.238 seconds
+[2025-02-19T22:11:50.137-0600] {processor.py:186} INFO - Started process (PID=35260) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:50.139-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:11:50.150-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:50.149-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:50.181-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:11:50.185-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:11:50.234-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:50.233-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:11:50.268-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:11:50.268-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:11:50.308-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.182 seconds
+[2025-02-19T22:12:20.437-0600] {processor.py:186} INFO - Started process (PID=35571) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:20.440-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:12:20.445-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:20.444-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:20.472-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:12:20.479-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:20.517-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:20.516-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:12:20.544-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:20.543-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:12:20.573-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.152 seconds
+[2025-02-19T22:12:50.867-0600] {processor.py:186} INFO - Started process (PID=36092) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:50.870-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:12:50.877-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:50.876-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:50.913-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:12:50.919-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:12:51.120-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:51.119-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:12:51.269-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:12:51.269-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:12:51.319-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.518 seconds
+[2025-02-19T22:13:21.464-0600] {processor.py:186} INFO - Started process (PID=36254) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:21.467-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:13:21.474-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:21.473-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:21.495-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:13:21.501-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:21.545-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:21.545-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:13:21.581-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:21.581-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:13:21.617-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.170 seconds
+[2025-02-19T22:13:51.841-0600] {processor.py:186} INFO - Started process (PID=36552) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:51.845-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:13:51.866-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:51.863-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:51.905-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:13:51.915-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:13:52.040-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:52.039-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:13:52.086-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:13:52.086-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:13:52.128-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.342 seconds
+[2025-02-19T22:14:22.318-0600] {processor.py:186} INFO - Started process (PID=36719) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:22.321-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:14:22.325-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:22.325-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:22.343-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:14:22.348-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:22.398-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:22.397-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:14:22.429-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:22.429-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:14:22.464-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.171 seconds
+[2025-02-19T22:14:52.591-0600] {processor.py:186} INFO - Started process (PID=36946) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:52.593-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:14:52.598-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:52.597-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:52.620-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:14:52.625-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:14:52.668-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:52.667-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:14:52.702-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:14:52.702-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:14:52.744-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.167 seconds
+[2025-02-19T22:15:22.890-0600] {processor.py:186} INFO - Started process (PID=37112) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:22.893-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:15:22.900-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:22.899-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:22.931-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:15:22.936-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:22.990-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:22.990-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:15:23.025-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:23.025-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:15:23.061-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.187 seconds
+[2025-02-19T22:15:53.192-0600] {processor.py:186} INFO - Started process (PID=37345) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:53.193-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:15:53.198-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:53.196-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:53.215-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:15:53.221-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:15:53.276-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:53.274-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:15:53.331-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:15:53.331-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:15:53.386-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.208 seconds
+[2025-02-19T22:16:23.608-0600] {processor.py:186} INFO - Started process (PID=37512) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:23.611-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:16:23.615-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:23.614-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:23.636-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:16:23.641-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:23.701-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:23.701-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:16:23.747-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:23.747-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:16:23.800-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.204 seconds
+[2025-02-19T22:16:53.984-0600] {processor.py:186} INFO - Started process (PID=37739) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:53.985-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:16:53.989-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:53.988-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:54.003-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:16:54.006-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:16:54.057-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:54.057-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:16:54.101-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:16:54.100-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:16:54.135-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.161 seconds
+[2025-02-19T22:17:24.277-0600] {processor.py:186} INFO - Started process (PID=37908) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:24.279-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:17:24.282-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:24.282-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:24.295-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:17:24.300-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:24.343-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:24.343-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:17:24.392-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:24.391-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:17:24.426-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.157 seconds
+[2025-02-19T22:17:54.579-0600] {processor.py:186} INFO - Started process (PID=38141) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:54.580-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:17:54.584-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:54.583-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:54.597-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:17:54.600-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:17:54.627-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:54.627-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:17:54.655-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:17:54.654-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:17:54.689-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.118 seconds
+[2025-02-19T22:18:24.956-0600] {processor.py:186} INFO - Started process (PID=38609) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:18:24.961-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-02-19T22:18:24.976-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:18:24.972-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:18:25.054-0600] {logging_mixin.py:190} INFO - DAG_1 is ready!
+[2025-02-19T22:18:25.067-0600] {processor.py:925} INFO - DAG(s) 'DAG_1' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-02-19T22:18:25.161-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:18:25.160-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-19T22:18:25.428-0600] {logging_mixin.py:190} INFO - [2025-02-19T22:18:25.427-0600] {dag.py:4180} INFO - Setting next_dagrun for DAG_1 to 2025-02-19 05:13:30+00:00, run_after=2025-02-19 05:14:00+00:00
+[2025-02-19T22:18:25.478-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.562 seconds
