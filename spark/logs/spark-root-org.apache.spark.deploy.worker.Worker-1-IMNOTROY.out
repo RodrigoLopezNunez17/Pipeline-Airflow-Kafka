@@ -1,0 +1,680 @@
+Spark Command: /usr/lib/jvm/java-11-openjdk-amd64/bin/java -cp /home/dataScience/Projects/Pipeline/spark-3.5.4-bin-hadoop3/conf/:/home/dataScience/Projects/Pipeline/spark-3.5.4-bin-hadoop3/jars/* -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://IMNOTROY.:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+25/02/18 23:16:41 INFO Worker: Started daemon with process name: 230970@IMNOTROY
+25/02/18 23:16:41 INFO SignalUtils: Registering signal handler for TERM
+25/02/18 23:16:41 INFO SignalUtils: Registering signal handler for HUP
+25/02/18 23:16:41 INFO SignalUtils: Registering signal handler for INT
+25/02/18 23:16:41 WARN Utils: Your hostname, IMNOTROY resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+25/02/18 23:16:41 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+25/02/18 23:16:42 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+25/02/18 23:16:43 INFO SecurityManager: Changing view acls to: root
+25/02/18 23:16:43 INFO SecurityManager: Changing modify acls to: root
+25/02/18 23:16:43 INFO SecurityManager: Changing view acls groups to: 
+25/02/18 23:16:43 INFO SecurityManager: Changing modify acls groups to: 
+25/02/18 23:16:43 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: root; groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY
+25/02/18 23:16:43 INFO Utils: Successfully started service 'sparkWorker' on port 42019.
+25/02/18 23:16:43 INFO Worker: Worker decommissioning not enabled.
+25/02/18 23:16:44 INFO Worker: Starting Spark worker 10.255.255.254:42019 with 8 cores, 2.5 GiB RAM
+25/02/18 23:16:44 INFO Worker: Running Spark version 3.5.4
+25/02/18 23:16:44 INFO Worker: Spark home: /home/dataScience/Projects/Pipeline/spark-3.5.4-bin-hadoop3
+25/02/18 23:16:44 INFO ResourceUtils: ==============================================================
+25/02/18 23:16:44 INFO ResourceUtils: No custom resources configured for spark.worker.
+25/02/18 23:16:44 INFO ResourceUtils: ==============================================================
+25/02/18 23:16:44 INFO JettyUtils: Start Jetty 0.0.0.0:8081 for WorkerUI
+25/02/18 23:16:44 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+25/02/18 23:16:44 INFO WorkerWebUI: Bound WorkerWebUI to 0.0.0.0, and started at http://10.255.255.254:8081
+25/02/18 23:16:44 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/18 23:16:45 INFO TransportClientFactory: Successfully created connection to IMNOTROY./127.0.1.1:7077 after 149 ms (0 ms spent in bootstraps)
+25/02/18 23:16:46 INFO Worker: Successfully registered with master spark://IMNOTROY.:7077
+25/02/19 00:16:01 INFO Worker: IMNOTROY.:7077 Disassociated !
+25/02/19 00:16:01 ERROR Worker: Connection to master failed! Waiting for master to reconnect...
+25/02/19 00:16:01 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:01 INFO Worker: IMNOTROY.:7077 Disassociated !
+25/02/19 00:16:01 ERROR Worker: Connection to master failed! Waiting for master to reconnect...
+25/02/19 00:16:01 INFO Worker: Not spawning another attempt to register with the master, since there is an attempt scheduled already.
+25/02/19 00:16:02 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:02 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$1.run(Worker.scala:313)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:16:13 INFO Worker: Retrying connection to master (attempt # 1)
+25/02/19 00:16:13 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:13 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:13 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:16:23 INFO Worker: Retrying connection to master (attempt # 2)
+25/02/19 00:16:23 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:23 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:23 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:16:34 INFO Worker: Retrying connection to master (attempt # 3)
+25/02/19 00:16:34 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:34 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:35 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:16:45 INFO Worker: Retrying connection to master (attempt # 4)
+25/02/19 00:16:45 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:45 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:46 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:16:57 INFO Worker: Retrying connection to master (attempt # 5)
+25/02/19 00:16:57 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:16:57 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:16:57 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:17:07 INFO Worker: Retrying connection to master (attempt # 6)
+25/02/19 00:17:08 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:17:08 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:17:08 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:18:15 INFO Worker: Retrying connection to master (attempt # 7)
+25/02/19 00:18:15 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:18:15 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:18:15 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:19:22 INFO Worker: Retrying connection to master (attempt # 8)
+25/02/19 00:19:22 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:19:22 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:19:22 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:20:29 INFO Worker: Retrying connection to master (attempt # 9)
+25/02/19 00:20:29 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:20:29 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:20:29 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:21:36 INFO Worker: Retrying connection to master (attempt # 10)
+25/02/19 00:21:36 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:21:36 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:21:36 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:22:43 INFO Worker: Retrying connection to master (attempt # 11)
+25/02/19 00:22:43 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:22:43 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:22:43 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:23:50 INFO Worker: Retrying connection to master (attempt # 12)
+25/02/19 00:23:50 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:23:50 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:23:50 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:24:57 INFO Worker: Retrying connection to master (attempt # 13)
+25/02/19 00:24:57 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:24:57 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:24:57 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:26:04 INFO Worker: Retrying connection to master (attempt # 14)
+25/02/19 00:26:04 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:26:04 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:26:04 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:27:11 INFO Worker: Retrying connection to master (attempt # 15)
+25/02/19 00:27:11 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:27:11 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:27:11 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:28:18 INFO Worker: Retrying connection to master (attempt # 16)
+25/02/19 00:28:18 INFO Worker: Connecting to master IMNOTROY.:7077...
+25/02/19 00:28:18 INFO TransportClientFactory: Found inactive connection to IMNOTROY./127.0.1.1:7077, creating a new one.
+25/02/19 00:28:18 WARN Worker: Failed to connect to master IMNOTROY.:7077
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.SparkThreadUtils$.awaitResult(SparkThreadUtils.scala:56)
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:310)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRefByURI(RpcEnv.scala:102)
+	at org.apache.spark.rpc.RpcEnv.setupEndpointRef(RpcEnv.scala:110)
+	at org.apache.spark.deploy.worker.Worker$$anon$2.run(Worker.scala:370)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Failed to connect to IMNOTROY./127.0.1.1:7077
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:294)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:214)
+	at org.apache.spark.network.client.TransportClientFactory.createClient(TransportClientFactory.java:226)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.createClient(NettyRpcEnv.scala:204)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:202)
+	at org.apache.spark.rpc.netty.Outbox$$anon$1.call(Outbox.scala:198)
+	... 4 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: IMNOTROY./127.0.1.1:7077
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:777)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/02/19 00:29:25 ERROR Worker: All masters are unresponsive! Giving up.
