@@ -5,14 +5,15 @@ sudo apt-get update
 # pip install mysqlclient
 # sudo apt-get install pkg-config libmysqlclient-dev
 
+# Setting up all of the necessary services
+
+python MySQL/CreateDB.py
+
+
 # First of all, i need to initialize the airflow server
 
 source venv/bin/activate
-cd airflow
-airflow standalone
-gnome-terminal --working-directory=$(pwd) --bash -c 
-deactivate
-cd ..
+source airflow/airflow-start.sh
 
 # Then i need to initialize the kakfka server so that i need to initialize the zookeeper server first
 
