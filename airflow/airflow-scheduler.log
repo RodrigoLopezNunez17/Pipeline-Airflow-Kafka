@@ -9,3 +9,44 @@
 2025-02-20 23:05:41,271 INFO - Adopting or resetting orphaned tasks for active dag runs
 2025-02-20 23:10:41,333 INFO - Adopting or resetting orphaned tasks for active dag runs
 2025-02-20 23:15:41,381 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:20:41,484 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:25:41,535 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:30:41,606 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:35:41,658 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:40:41,726 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:45:41,789 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:50:41,866 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-20 23:55:41,933 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 00:00:41,981 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 00:05:42,033 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 00:10:42,089 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 13:36:56,472 INFO - Loaded executor: SequentialExecutor
+2025-02-21 13:36:56,573 INFO - Starting the scheduler
+2025-02-21 13:36:56,578 INFO - Processing each file at most -1 times
+2025-02-21 13:36:56,595 INFO - Launched DagFileProcessorManager with pid: 52535
+2025-02-21 13:36:56,603 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 13:36:56,612 INFO - Configured default timezone UTC
+2025-02-21 13:41:56,722 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 13:46:56,791 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 13:51:34,771 INFO - Exiting gracefully upon receiving signal 15
+2025-02-21 13:51:35,578 INFO - Sending Signals.SIGTERM to group 52535. PIDs of all processes in the group: []
+2025-02-21 13:51:35,579 INFO - Sending the signal Signals.SIGTERM to group 52535
+2025-02-21 13:51:35,582 INFO - Sending the signal Signals.SIGTERM to process 52535 as process group is missing.
+2025-02-21 13:51:35,587 INFO - Sending Signals.SIGTERM to group 52535. PIDs of all processes in the group: []
+2025-02-21 13:51:35,588 INFO - Sending the signal Signals.SIGTERM to group 52535
+2025-02-21 13:51:35,590 INFO - Sending the signal Signals.SIGTERM to process 52535 as process group is missing.
+2025-02-21 13:51:35,591 INFO - Exited execute loop
+2025-02-21 13:52:46,345 INFO - Loaded executor: SequentialExecutor
+2025-02-21 13:52:46,427 INFO - Starting the scheduler
+2025-02-21 13:52:46,429 INFO - Processing each file at most -1 times
+2025-02-21 13:52:46,442 INFO - Launched DagFileProcessorManager with pid: 61012
+2025-02-21 13:52:46,446 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-02-21 13:52:46,453 INFO - Configured default timezone UTC
+2025-02-21 13:53:34,827 INFO - Exiting gracefully upon receiving signal 15
+2025-02-21 13:53:35,159 INFO - Sending Signals.SIGTERM to group 61012. PIDs of all processes in the group: []
+2025-02-21 13:53:35,162 INFO - Sending the signal Signals.SIGTERM to group 61012
+2025-02-21 13:53:35,165 INFO - Sending the signal Signals.SIGTERM to process 61012 as process group is missing.
+2025-02-21 13:53:35,173 INFO - Sending Signals.SIGTERM to group 61012. PIDs of all processes in the group: []
+2025-02-21 13:53:35,174 INFO - Sending the signal Signals.SIGTERM to group 61012
+2025-02-21 13:53:35,176 INFO - Sending the signal Signals.SIGTERM to process 61012 as process group is missing.
+2025-02-21 13:53:35,177 INFO - Exited execute loop

@@ -1,11 +1,14 @@
-[2025-02-20T22:50:40.858-0600] {executor_loader.py:258} INFO - Loaded executor: SequentialExecutor
-[2025-02-20T22:50:40.958-0600] {scheduler_job_runner.py:950} INFO - Starting the scheduler
-[2025-02-20T22:50:40.961-0600] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
-[2025-02-20T22:50:40.975-0600] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 24220
-[2025-02-20T22:50:40.979-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-02-20T22:50:40.993-0600] {settings.py:63} INFO - Configured default timezone UTC
-[2025-02-20T22:55:41.121-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-02-20T23:00:41.189-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-02-20T23:05:41.271-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-02-20T23:10:41.333-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-02-20T23:15:41.381-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-02-21T13:52:46.345-0600] {executor_loader.py:258} INFO - Loaded executor: SequentialExecutor
+[2025-02-21T13:52:46.427-0600] {scheduler_job_runner.py:950} INFO - Starting the scheduler
+[2025-02-21T13:52:46.429-0600] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
+[2025-02-21T13:52:46.442-0600] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 61012
+[2025-02-21T13:52:46.446-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-02-21T13:52:46.453-0600] {settings.py:63} INFO - Configured default timezone UTC
+[2025-02-21T13:53:34.827-0600] {scheduler_job_runner.py:272} INFO - Exiting gracefully upon receiving signal 15
+[2025-02-21T13:53:35.159-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 61012. PIDs of all processes in the group: []
+[2025-02-21T13:53:35.162-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 61012
+[2025-02-21T13:53:35.165-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 61012 as process group is missing.
+[2025-02-21T13:53:35.173-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 61012. PIDs of all processes in the group: []
+[2025-02-21T13:53:35.174-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 61012
+[2025-02-21T13:53:35.176-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 61012 as process group is missing.
+[2025-02-21T13:53:35.177-0600] {scheduler_job_runner.py:1029} INFO - Exited execute loop
