@@ -1,6 +1,6 @@
 The first step is to install all our tools, so:
 
-In a Linux terminal, we create the folder where the our project is supposed to be:
+In a Linux terminal, we create the folder where the our project is supposed to be :
 
 ```
 mkdir Pipeline
