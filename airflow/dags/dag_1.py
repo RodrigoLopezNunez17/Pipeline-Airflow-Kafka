@@ -2,7 +2,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.decorators import task
 from confluent_kafka import Producer
-import mysql.connector,  subprocess, requests
+import mysql.connector, requests
 
 def kelvin_to_celsius(kelvin : float) -> float:
     return kelvin - 273.15
@@ -13,13 +13,13 @@ def SendMessage() -> None:
         'bootstrap.servers':'localhost:9092'
     }
     p : Producer = Producer(conf)
-    p.produce(topic = "quickstart-events", value = "The data was gotten and sent succesfully!")
+    p.produce(topic = "airflow", value = "The data was gotten and sent succesfully!")
     p.flush()
     return "Done!"
 
 @task(task_id = "WeatherAPI")
 def WeatherAPI() -> dict:
-    url = "https://api.openweathermap.org/data/3.0/onecall?lat=19.42846&lon=-99.18772&appid=7268c495c33b59fb722943fe931c8aa1"
+    url = ""
     response  = requests.get(url)
 
     if response.status_code == 200:
@@ -70,10 +70,8 @@ with DAG(
     start_date=datetime(2025, 2, 19),
     schedule = "@daily"
          ) as dag:
-    WeatherAPI = WeatherAPI()
+    weatherAPI = WeatherAPI()
 
-    StoreData = StoreData(WeatherAPI)
+    storeData = StoreData(weatherAPI)
 
     SendMessage = SendMessage()
-
-WeatherAPI >> StoreData >> SendMessage

@@ -1,0 +1,128 @@
+[2025-02-27T13:05:05.692-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-27T13:05:06.647-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [queued]>
+[2025-02-27T13:05:06.958-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [queued]>
+[2025-02-27T13:05:06.959-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-02-27T13:05:07.508-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): SendMessage> on 2025-02-25 00:00:00+00:00
+[2025-02-27T13:05:07.618-0600] {standard_task_runner.py:72} INFO - Started process 43630 to run task
+[2025-02-27T13:05:07.677-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-25T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/dag_1.py', '--cfg-path', '/tmp/tmp2rahk2sk']
+[2025-02-27T13:05:07.772-0600] {standard_task_runner.py:105} INFO - Job 17: Subtask SendMessage
+[2025-02-27T13:06:49.579-0600] {standard_task_runner.py:124} ERROR - Failed to execute job 17 for task SendMessage ((MySQLdb.OperationalError) (2013, "Lost connection to MySQL server at 'sending authentication information', system error: 32")
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 43630)
+Traceback (most recent call last):
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/MySQLdb/connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2013, "Lost connection to MySQL server at 'sending authentication information', system error: 32")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 462, in task_run
+    ti, _ = _get_ti(task, args.map_index, exec_date_or_run_id=args.execution_date_or_run_id, pool=args.pool)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 224, in _get_ti
+    ti, dr_created = _get_ti_db_access(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 186, in _get_ti_db_access
+    dag_run, dr_created = _get_dag_run(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 120, in _get_dag_run
+    dag_run = DAG.fetch_dagrun(dag_id=dag.dag_id, run_id=exec_date_or_run_id, session=session)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/airflow/models/dag.py", line 1728, in fetch_dagrun
+    return session.scalar(query)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/dataScience/Projects/Pipeline/venv/lib/python3.10/site-packages/MySQLdb/connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (2013, "Lost connection to MySQL server at 'sending authentication information', system error: 32")
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-02-27T13:06:51.694-0600] {job.py:229} INFO - Heartbeat recovered after 107.16 seconds
+[2025-02-27T13:06:52.405-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-02-27T13:06:54.718-0600] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-02-27T13:07:06.446-0600] {local_task_job_runner.py:245} INFO - ::endgroup::
