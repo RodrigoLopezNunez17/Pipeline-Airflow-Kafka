@@ -69,7 +69,7 @@ if __name__ == "__main__":
     elif look_inside == "tab":
         print(f"\n")
         print("Here's the list of columms of the table 'WeatherData' : ")
-        print("Introduce the password 'root' when prompted.")
+        print("Introduce the password for 'root' when prompted.")
         subprocess.run("mysql -u root -p --execute 'SHOW COLUMNS FROM Weather.WeatherData;'", shell = True)
     elif look_inside == "both":
         print(f"\nHere's the list of databases : ")
