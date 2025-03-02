@@ -21,3 +21,5 @@ cd kafka
 bin/zookeeper-server-start.sh config/zookeeper.properties --daemon
 bin/kafka-server-start.sh config/server.properties --deamon
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic airflow --from-beginning
+
+# Then i need to initialize the mysql server
