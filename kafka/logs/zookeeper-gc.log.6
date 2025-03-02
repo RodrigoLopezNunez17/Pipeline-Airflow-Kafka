@@ -1,19 +1,24 @@
-[2025-02-19T12:47:36.932-0600][gc,heap] Heap region size: 1M
-[2025-02-19T12:47:36.940-0600][gc     ] Using G1
-[2025-02-19T12:47:36.940-0600][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
-[2025-02-19T12:47:36.941-0600][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff6bff8]
-[2025-02-19T12:47:36.941-0600][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe47ff8]
-[2025-02-19T12:47:38.168-0600][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
-[2025-02-19T12:47:38.171-0600][gc,task      ] GC(0) Using 8 workers of 8 for evacuation
-[2025-02-19T12:47:38.198-0600][gc,mmu       ] GC(0) MMU target violated: 21.0ms (20.0ms/21.0ms)
-[2025-02-19T12:47:38.198-0600][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
-[2025-02-19T12:47:38.198-0600][gc,phases    ] GC(0)   Evacuate Collection Set: 25.9ms
-[2025-02-19T12:47:38.198-0600][gc,phases    ] GC(0)   Post Evacuate Collection Set: 1.2ms
-[2025-02-19T12:47:38.198-0600][gc,phases    ] GC(0)   Other: 3.2ms
-[2025-02-19T12:47:38.198-0600][gc,heap      ] GC(0) Eden regions: 25->0(21)
-[2025-02-19T12:47:38.198-0600][gc,heap      ] GC(0) Survivor regions: 0->4(4)
-[2025-02-19T12:47:38.198-0600][gc,heap      ] GC(0) Old regions: 2->7
-[2025-02-19T12:47:38.198-0600][gc,heap      ] GC(0) Humongous regions: 0->0
-[2025-02-19T12:47:38.199-0600][gc,metaspace ] GC(0) Metaspace: 6958K(7680K)->6958K(7680K) NonClass: 6175K(6656K)->6175K(6656K) Class: 782K(1024K)->782K(1024K)
-[2025-02-19T12:47:38.199-0600][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 30.413ms
-[2025-02-19T12:47:38.199-0600][gc,cpu       ] GC(0) User=0.13s Sys=0.08s Real=0.03s
+[2025-03-02T00:10:32.967-0600][gc,heap] Heap region size: 1M
+[2025-03-02T00:10:32.980-0600][gc     ] Using G1
+[2025-03-02T00:10:32.980-0600][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+[2025-03-02T00:10:32.981-0600][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff6bff8]
+[2025-03-02T00:10:32.981-0600][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe47ff8]
+[2025-03-02T00:10:33.968-0600][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2025-03-02T00:10:33.970-0600][gc,task      ] GC(0) Using 8 workers of 8 for evacuation
+[2025-03-02T00:10:33.994-0600][gc,mmu       ] GC(0) MMU target violated: 21.0ms (20.0ms/21.0ms)
+[2025-03-02T00:10:33.994-0600][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.1ms
+[2025-03-02T00:10:33.994-0600][gc,phases    ] GC(0)   Evacuate Collection Set: 22.0ms
+[2025-03-02T00:10:33.994-0600][gc,phases    ] GC(0)   Post Evacuate Collection Set: 1.3ms
+[2025-03-02T00:10:33.994-0600][gc,phases    ] GC(0)   Other: 2.6ms
+[2025-03-02T00:10:33.994-0600][gc,heap      ] GC(0) Eden regions: 25->0(21)
+[2025-03-02T00:10:33.994-0600][gc,heap      ] GC(0) Survivor regions: 0->4(4)
+[2025-03-02T00:10:33.994-0600][gc,heap      ] GC(0) Old regions: 2->6
+[2025-03-02T00:10:33.994-0600][gc,heap      ] GC(0) Humongous regions: 0->0
+[2025-03-02T00:10:33.994-0600][gc,metaspace ] GC(0) Metaspace: 6956K(7680K)->6956K(7680K) NonClass: 6176K(6656K)->6176K(6656K) Class: 780K(1024K)->780K(1024K)
+[2025-03-02T00:10:33.994-0600][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 26.299ms
+[2025-03-02T00:10:33.994-0600][gc,cpu       ] GC(0) User=0.04s Sys=0.11s Real=0.03s
+[2025-03-02T00:25:53.121-0600][gc,heap,exit ] Heap
+[2025-03-02T00:25:53.123-0600][gc,heap,exit ]  garbage-first heap   total 524288K, used 26147K [0x00000000e0000000, 0x0000000100000000)
+[2025-03-02T00:25:53.123-0600][gc,heap,exit ]   region size 1024K, 23 young (23552K), 4 survivors (4096K)
+[2025-03-02T00:25:53.123-0600][gc,heap,exit ]  Metaspace       used 9425K, capacity 9786K, committed 10240K, reserved 1058816K
+[2025-03-02T00:25:53.123-0600][gc,heap,exit ]   class space    used 1002K, capacity 1165K, committed 1280K, reserved 1048576K
