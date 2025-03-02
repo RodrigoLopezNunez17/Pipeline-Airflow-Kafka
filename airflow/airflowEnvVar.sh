@@ -7,7 +7,7 @@ export AIRFLOW_DATABASE_SQL_ALCHEMY_CONN="mysql+mysqlconnector://root:root@local
 echo "AIRFLOW_DATABASE_SQL_ALCHEMY_CONN : $AIRFLOW_DATABASE_SQL_ALCHEMY_CONN"
 echo -e "\n"
 
-export AIRFLOW_EXECUTOR=SequentialExecutor
+export AIRFLOW_EXECUTOR=LocalExecutor
 echo "AIRFLOW_EXECUTOR: $AIRFLOW_EXECUTOR"
 echo -e "\n"
 
