@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WeatherProject</title>
+        <meta name="description" content="An app which will help use the Pipeline interactevely.">
+        <meta name="author" content="Rodrigo López Núñez">
+        <link rel="icon" type="image/x-icon" href="Images/sunny_cloudy.ico">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
