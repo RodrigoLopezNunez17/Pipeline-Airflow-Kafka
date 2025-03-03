@@ -29,7 +29,3 @@ if __name__ == "__main__":
                     case "N":
                         print(f"\nGoodbye!\n")
                         break
-
-    
-
-
