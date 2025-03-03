@@ -1,23 +1,24 @@
-[2025-02-27T13:56:17.325-0600][gc,heap] Heap region size: 1M
-[2025-02-27T13:56:17.337-0600][gc     ] Using G1
-[2025-02-27T13:56:17.338-0600][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
-[2025-02-27T13:56:17.338-0600][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff6bff8]
-[2025-02-27T13:56:17.338-0600][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe47ff8]
-[2025-02-27T13:56:19.086-0600][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
-[2025-02-27T13:56:19.088-0600][gc,task      ] GC(0) Using 8 workers of 8 for evacuation
-[2025-02-27T13:56:19.107-0600][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
-[2025-02-27T13:56:19.108-0600][gc,phases    ] GC(0)   Evacuate Collection Set: 16.1ms
-[2025-02-27T13:56:19.108-0600][gc,phases    ] GC(0)   Post Evacuate Collection Set: 1.8ms
-[2025-02-27T13:56:19.108-0600][gc,phases    ] GC(0)   Other: 3.0ms
-[2025-02-27T13:56:19.108-0600][gc,heap      ] GC(0) Eden regions: 25->0(21)
-[2025-02-27T13:56:19.108-0600][gc,heap      ] GC(0) Survivor regions: 0->4(4)
-[2025-02-27T13:56:19.108-0600][gc,heap      ] GC(0) Old regions: 2->6
-[2025-02-27T13:56:19.108-0600][gc,heap      ] GC(0) Humongous regions: 0->0
-[2025-02-27T13:56:19.108-0600][gc,metaspace ] GC(0) Metaspace: 6985K(7680K)->6985K(7680K) NonClass: 6199K(6656K)->6199K(6656K) Class: 785K(1024K)->785K(1024K)
-[2025-02-27T13:56:19.109-0600][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 22.945ms
-[2025-02-27T13:56:19.109-0600][gc,cpu       ] GC(0) User=0.09s Sys=0.03s Real=0.02s
-[2025-02-27T14:06:48.262-0600][gc,heap,exit ] Heap
-[2025-02-27T14:06:48.263-0600][gc,heap,exit ]  garbage-first heap   total 524288K, used 24015K [0x00000000e0000000, 0x0000000100000000)
-[2025-02-27T14:06:48.263-0600][gc,heap,exit ]   region size 1024K, 20 young (20480K), 4 survivors (4096K)
-[2025-02-27T14:06:48.263-0600][gc,heap,exit ]  Metaspace       used 9206K, capacity 9596K, committed 9984K, reserved 1058816K
-[2025-02-27T14:06:48.263-0600][gc,heap,exit ]   class space    used 1004K, capacity 1165K, committed 1280K, reserved 1048576K
+[2025-03-03T12:25:48.801-0600][gc,heap] Heap region size: 1M
+[2025-03-03T12:25:48.809-0600][gc     ] Using G1
+[2025-03-03T12:25:48.809-0600][gc,heap,coops] Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+[2025-03-03T12:25:48.810-0600][gc,cds       ] Mark closed archive regions in map: [0x00000000fff00000, 0x00000000fff6bff8]
+[2025-03-03T12:25:48.810-0600][gc,cds       ] Mark open archive regions in map: [0x00000000ffe00000, 0x00000000ffe47ff8]
+[2025-03-03T12:25:50.188-0600][gc,start     ] GC(0) Pause Young (Normal) (G1 Evacuation Pause)
+[2025-03-03T12:25:50.193-0600][gc,task      ] GC(0) Using 8 workers of 8 for evacuation
+[2025-03-03T12:25:50.227-0600][gc,mmu       ] GC(0) MMU target violated: 21.0ms (20.0ms/21.0ms)
+[2025-03-03T12:25:50.227-0600][gc,phases    ] GC(0)   Pre Evacuate Collection Set: 0.0ms
+[2025-03-03T12:25:50.227-0600][gc,phases    ] GC(0)   Evacuate Collection Set: 32.0ms
+[2025-03-03T12:25:50.227-0600][gc,phases    ] GC(0)   Post Evacuate Collection Set: 0.9ms
+[2025-03-03T12:25:50.227-0600][gc,phases    ] GC(0)   Other: 5.9ms
+[2025-03-03T12:25:50.227-0600][gc,heap      ] GC(0) Eden regions: 25->0(21)
+[2025-03-03T12:25:50.227-0600][gc,heap      ] GC(0) Survivor regions: 0->4(4)
+[2025-03-03T12:25:50.227-0600][gc,heap      ] GC(0) Old regions: 2->7
+[2025-03-03T12:25:50.227-0600][gc,heap      ] GC(0) Humongous regions: 0->0
+[2025-03-03T12:25:50.227-0600][gc,metaspace ] GC(0) Metaspace: 6969K(7680K)->6969K(7680K) NonClass: 6187K(6656K)->6187K(6656K) Class: 782K(1024K)->782K(1024K)
+[2025-03-03T12:25:50.227-0600][gc           ] GC(0) Pause Young (Normal) (G1 Evacuation Pause) 25M->8M(512M) 39.089ms
+[2025-03-03T12:25:50.227-0600][gc,cpu       ] GC(0) User=0.13s Sys=0.11s Real=0.04s
+[2025-03-03T12:30:19.898-0600][gc,heap,exit ] Heap
+[2025-03-03T12:30:19.898-0600][gc,heap,exit ]  garbage-first heap   total 524288K, used 25425K [0x00000000e0000000, 0x0000000100000000)
+[2025-03-03T12:30:19.898-0600][gc,heap,exit ]   region size 1024K, 22 young (22528K), 4 survivors (4096K)
+[2025-03-03T12:30:19.898-0600][gc,heap,exit ]  Metaspace       used 9312K, capacity 9725K, committed 9984K, reserved 1058816K
+[2025-03-03T12:30:19.898-0600][gc,heap,exit ]   class space    used 1001K, capacity 1165K, committed 1280K, reserved 1048576K
