@@ -1,0 +1,80 @@
+[2025-03-03T12:22:16.877-0600] {processor.py:186} INFO - Started process (PID=4530) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:16.880-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:22:16.885-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:16.884-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:17.450-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:17.509-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:17.509-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:22:17.587-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:17.586-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:22:17.659-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.799 seconds
+[2025-03-03T12:22:48.010-0600] {processor.py:186} INFO - Started process (PID=4791) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:48.012-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:22:48.016-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:48.016-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:49.251-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:22:49.314-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:49.313-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:22:49.387-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:22:49.386-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:22:49.875-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 1.878 seconds
+[2025-03-03T12:23:20.261-0600] {processor.py:186} INFO - Started process (PID=5114) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:20.266-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:23:20.278-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:20.276-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:20.998-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:21.051-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:21.051-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:23:21.107-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:21.107-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:23:21.155-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.919 seconds
+[2025-03-03T12:23:46.437-0600] {processor.py:186} INFO - Started process (PID=5289) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:46.440-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:23:46.449-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:46.448-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:46.741-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:23:46.800-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:46.800-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:23:46.841-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:23:46.841-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:23:46.911-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.485 seconds
+[2025-03-03T12:24:17.144-0600] {processor.py:186} INFO - Started process (PID=5502) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:24:17.148-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:24:17.152-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:24:17.152-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:24:17.470-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:24:17.541-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:24:17.541-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:24:17.587-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:24:17.586-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:24:17.639-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.515 seconds
+[2025-03-03T12:56:11.223-0600] {processor.py:186} INFO - Started process (PID=20273) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:11.241-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:56:11.276-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:11.272-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:13.605-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:13.698-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:13.698-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:56:13.797-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:13.797-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:56:13.885-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 2.723 seconds
+[2025-03-03T12:56:44.229-0600] {processor.py:186} INFO - Started process (PID=21541) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:44.231-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:56:44.235-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:44.234-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:44.673-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:56:44.725-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:44.725-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:56:44.776-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:56:44.776-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:56:44.824-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.609 seconds
+[2025-03-03T12:57:14.955-0600] {processor.py:186} INFO - Started process (PID=21828) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:14.956-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:57:14.960-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:14.959-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:15.386-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:15.423-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:15.423-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:57:15.462-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:15.462-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:57:15.510-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.565 seconds
+[2025-03-03T12:57:45.826-0600] {processor.py:186} INFO - Started process (PID=22117) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:45.828-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:57:45.833-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:45.832-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:46.012-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:57:46.077-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:46.077-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:57:46.122-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:57:46.122-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:57:46.188-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.379 seconds
+[2025-03-03T12:58:16.507-0600] {processor.py:186} INFO - Started process (PID=22369) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:16.509-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:58:16.513-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:16.513-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:16.715-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:16.769-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:16.769-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:58:16.821-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:16.821-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:58:16.872-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.380 seconds
+[2025-03-03T12:58:47.248-0600] {processor.py:186} INFO - Started process (PID=22618) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:47.251-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T12:58:47.255-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:47.254-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:47.439-0600] {processor.py:925} INFO - DAG(s) 'EtlWeather' retrieved from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T12:58:47.490-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:47.489-0600] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-03-03T12:58:47.529-0600] {logging_mixin.py:190} INFO - [2025-03-03T12:58:47.528-0600] {dag.py:4180} INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+[2025-03-03T12:58:47.574-0600] {processor.py:208} INFO - Processing /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py took 0.344 seconds
+[2025-03-03T13:00:15.756-0600] {processor.py:186} INFO - Started process (PID=22808) to work on /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T13:00:15.769-0600] {processor.py:914} INFO - Processing file /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py for tasks to queue
+[2025-03-03T13:00:15.780-0600] {logging_mixin.py:190} INFO - [2025-03-03T13:00:15.775-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py

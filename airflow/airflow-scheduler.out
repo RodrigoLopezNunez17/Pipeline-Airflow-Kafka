@@ -1,15 +1,66 @@
-[2025-03-02T00:53:39.457-0600] {executor_loader.py:258} INFO - Loaded executor: LocalExecutor
-[2025-03-02T00:53:39.538-0600] {scheduler_job_runner.py:950} INFO - Starting the scheduler
-[2025-03-02T00:53:39.540-0600] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
-[2025-03-02T00:53:39.848-0600] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 73347
-[2025-03-02T00:53:39.853-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
-[2025-03-02T00:53:39.861-0600] {settings.py:63} INFO - Configured default timezone UTC
-[2025-03-02T00:56:22.048-0600] {scheduler_job_runner.py:272} INFO - Exiting gracefully upon receiving signal 15
-[2025-03-02T00:56:22.317-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 73347. PIDs of all processes in the group: []
-[2025-03-02T00:56:22.319-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 73347
-[2025-03-02T00:56:22.320-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 73347 as process group is missing.
-[2025-03-02T00:56:22.321-0600] {local_executor.py:423} INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
-[2025-03-02T00:56:22.700-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 73347. PIDs of all processes in the group: []
-[2025-03-02T00:56:22.701-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 73347
-[2025-03-02T00:56:22.701-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 73347 as process group is missing.
-[2025-03-02T00:56:22.702-0600] {scheduler_job_runner.py:1029} INFO - Exited execute loop
+[2025-03-03T13:08:21.623-0600] {executor_loader.py:258} INFO - Loaded executor: LocalExecutor
+[2025-03-03T13:08:21.703-0600] {scheduler_job_runner.py:950} INFO - Starting the scheduler
+[2025-03-03T13:08:21.705-0600] {scheduler_job_runner.py:957} INFO - Processing each file at most -1 times
+[2025-03-03T13:08:22.040-0600] {manager.py:174} INFO - Launched DagFileProcessorManager with pid: 27405
+[2025-03-03T13:08:22.045-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:08:22.061-0600] {settings.py:63} INFO - Configured default timezone UTC
+[2025-03-03T13:12:29.715-0600] {job.py:229} INFO - Heartbeat recovered after 39.17 seconds
+[2025-03-03T13:13:45.434-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:13:45.453-0600] {scheduler_job_runner.py:1972} INFO - Marked 1 SchedulerJob instances as failed
+[2025-03-03T13:13:46.707-0600] {job.py:229} INFO - Heartbeat recovered after 49.37 seconds
+[2025-03-03T13:14:15.848-0600] {scheduler_job_runner.py:435} INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+[2025-03-03T13:14:15.851-0600] {scheduler_job_runner.py:507} INFO - DAG EtlWeather has 0/16 running and queued tasks
+[2025-03-03T13:14:15.852-0600] {scheduler_job_runner.py:507} INFO - DAG EtlWeather has 1/16 running and queued tasks
+[2025-03-03T13:14:15.853-0600] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+[2025-03-03T13:14:15.861-0600] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+[2025-03-03T13:14:15.866-0600] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+[2025-03-03T13:14:15.867-0600] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:15.867-0600] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+[2025-03-03T13:14:15.868-0600] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:15.938-0600] {local_executor.py:93} INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:15.947-0600] {local_executor.py:93} INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:16.789-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+[2025-03-03T13:14:16.788-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+[2025-03-03T13:14:20.618-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.WeatherAPI manual__2025-03-03T19:14:14.292439+00:00 [queued]> on host IMNOTROY.
+[2025-03-03T13:14:20.631-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.SendMessage manual__2025-03-03T19:14:14.292439+00:00 [queued]> on host IMNOTROY.
+[2025-03-03T13:14:22.100-0600] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1)
+[2025-03-03T13:14:22.114-0600] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=manual__2025-03-03T19:14:14.292439+00:00, map_index=-1, run_start_date=2025-03-03 19:14:20.888663+00:00, run_end_date=2025-03-03 19:14:21.580704+00:00, run_duration=0.692041, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=65, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-03 19:14:15.855048+00:00, queued_by_job_id=63, pid=30759
+[2025-03-03T13:14:23.268-0600] {scheduler_job_runner.py:435} INFO - 1 tasks up for execution:
+	<TaskInstance: EtlWeather.StoreData manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+[2025-03-03T13:14:23.269-0600] {scheduler_job_runner.py:507} INFO - DAG EtlWeather has 0/16 running and queued tasks
+[2025-03-03T13:14:23.270-0600] {scheduler_job_runner.py:646} INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.StoreData manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>
+[2025-03-03T13:14:23.276-0600] {scheduler_job_runner.py:748} INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.StoreData manual__2025-03-03T19:14:14.292439+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+[2025-03-03T13:14:23.277-0600] {scheduler_job_runner.py:692} INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='StoreData', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+[2025-03-03T13:14:23.278-0600] {base_executor.py:169} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'StoreData', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:23.294-0600] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1)
+[2025-03-03T13:14:23.301-0600] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=manual__2025-03-03T19:14:14.292439+00:00, map_index=-1, run_start_date=2025-03-03 19:14:20.862203+00:00, run_end_date=2025-03-03 19:14:22.143810+00:00, run_duration=1.28161, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=64, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-03 19:14:15.855048+00:00, queued_by_job_id=63, pid=30757
+[2025-03-03T13:14:23.337-0600] {local_executor.py:93} INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'StoreData', 'manual__2025-03-03T19:14:14.292439+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+[2025-03-03T13:14:23.475-0600] {dagbag.py:588} INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+[2025-03-03T13:14:24.180-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.StoreData manual__2025-03-03T19:14:14.292439+00:00 [queued]> on host IMNOTROY.
+[2025-03-03T13:14:25.552-0600] {dagrun.py:854} INFO - Marking run <DagRun EtlWeather @ 2025-03-03 19:14:14.292439+00:00: manual__2025-03-03T19:14:14.292439+00:00, state:running, queued_at: 2025-03-03 19:14:14.393687+00:00. externally triggered: True> successful
+[2025-03-03T13:14:25.554-0600] {dagrun.py:905} INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-03 19:14:14.292439+00:00, run_id=manual__2025-03-03T19:14:14.292439+00:00, run_start_date=2025-03-03 19:14:15.690232+00:00, run_end_date=2025-03-03 19:14:25.554041+00:00, run_duration=9.863809, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-02 00:00:00+00:00, data_interval_end=2025-03-03 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+[2025-03-03T13:14:25.582-0600] {scheduler_job_runner.py:776} INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='StoreData', run_id='manual__2025-03-03T19:14:14.292439+00:00', try_number=1, map_index=-1)
+[2025-03-03T13:14:25.589-0600] {scheduler_job_runner.py:813} INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=StoreData, run_id=manual__2025-03-03T19:14:14.292439+00:00, map_index=-1, run_start_date=2025-03-03 19:14:24.316242+00:00, run_end_date=2025-03-03 19:14:24.871031+00:00, run_duration=0.554789, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=66, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-03 19:14:23.272602+00:00, queued_by_job_id=63, pid=30794
+[2025-03-03T13:18:45.594-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:23:45.667-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:28:45.722-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:33:45.779-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:38:45.840-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:43:45.899-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:48:45.963-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:53:46.018-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T13:58:46.077-0600] {scheduler_job_runner.py:1949} INFO - Adopting or resetting orphaned tasks for active dag runs
+[2025-03-03T14:00:15.458-0600] {scheduler_job_runner.py:272} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-03T14:00:16.267-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 27405. PIDs of all processes in the group: []
+[2025-03-03T14:00:16.269-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 27405
+[2025-03-03T14:00:16.270-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 27405 as process group is missing.
+[2025-03-03T14:00:16.275-0600] {local_executor.py:423} INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+[2025-03-03T14:00:16.921-0600] {process_utils.py:132} INFO - Sending Signals.SIGTERM to group 27405. PIDs of all processes in the group: []
+[2025-03-03T14:00:16.922-0600] {process_utils.py:87} INFO - Sending the signal Signals.SIGTERM to group 27405
+[2025-03-03T14:00:16.923-0600] {process_utils.py:101} INFO - Sending the signal Signals.SIGTERM to process 27405 as process group is missing.
+[2025-03-03T14:00:16.923-0600] {scheduler_job_runner.py:1029} INFO - Exited execute loop

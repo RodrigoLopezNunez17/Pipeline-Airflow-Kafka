@@ -98,3 +98,1198 @@ File Path                                                  PID    Runtime      #
 /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.41s           2025-03-02T06:55:44                      12
 ================================================================================
 [2025-03-02T00:56:22.045-0600] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-03T12:22:16.678-0600] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-03T12:22:16.680-0600] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-03T12:22:16.681-0600] {manager.py:485} INFO - Checking for new files in /home/dataScience/Projects/Pipeline/airflow/dags every 300 seconds
+[2025-03-03T12:22:16.682-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T12:22:16.687-0600] {manager.py:824} INFO - There are 1 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T12:22:16.902-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py   4530  0.06s             0           0                                                   0
+================================================================================
+[2025-03-03T12:22:46.968-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.85s           2025-03-03T18:22:17                      12
+================================================================================
+[2025-03-03T12:23:17.168-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  1.92s           2025-03-03T18:22:49                      12
+================================================================================
+[2025-03-03T12:23:47.836-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.52s           2025-03-03T18:23:46                      12
+================================================================================
+[2025-03-03T12:24:18.238-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.55s           2025-03-03T18:24:17                      12
+================================================================================
+[2025-03-03T12:24:30.804-0600] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-03T12:56:10.468-0600] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-03T12:56:10.470-0600] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-03T12:56:10.471-0600] {manager.py:485} INFO - Checking for new files in /home/dataScience/Projects/Pipeline/airflow/dags every 300 seconds
+[2025-03-03T12:56:10.472-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T12:56:10.482-0600] {manager.py:824} INFO - There are 1 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T12:56:11.341-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py  20273  0.23s             0           0                                                   0
+================================================================================
+[2025-03-03T12:56:41.620-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  2.84s           2025-03-03T18:56:13                      12
+================================================================================
+[2025-03-03T12:57:11.902-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.65s           2025-03-03T18:56:44                      12
+================================================================================
+[2025-03-03T12:57:42.753-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.60s           2025-03-03T18:57:15                      12
+================================================================================
+[2025-03-03T12:58:13.063-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.42s           2025-03-03T18:57:46                      12
+================================================================================
+[2025-03-03T12:58:43.172-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.42s           2025-03-03T18:58:16                      12
+================================================================================
+[2025-03-03T12:59:14.722-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py                           1           0  0.38s           2025-03-03T18:58:47                      12
+================================================================================
+[2025-03-03T12:59:52.337-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                    PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+---------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py  22808  0.89s             1           0  0.38s           2025-03-03T18:58:47                      12
+================================================================================
+[2025-03-03T13:00:15.811-0600] {manager.py:1291} WARNING - Skipping processing of missing file: /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T13:00:15.816-0600] {manager.py:1120} WARNING - Stopping processor for /home/dataScience/Projects/Pipeline/airflow/dags/dag_1.py
+[2025-03-03T13:00:15.857-0600] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-03T13:00:18.320-0600] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-03T13:00:18.321-0600] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-03T13:00:18.321-0600] {manager.py:485} INFO - Checking for new files in /home/dataScience/Projects/Pipeline/airflow/dags every 300 seconds
+[2025-03-03T13:00:18.322-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:00:18.327-0600] {manager.py:824} INFO - There are 1 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:00:18.665-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py  22901  0.11s             0           0                                                   0
+================================================================================
+[2025-03-03T13:00:48.864-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  1.00s           2025-03-03T19:00:19                      34
+================================================================================
+[2025-03-03T13:01:18.958-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.79s           2025-03-03T19:00:50                      12
+================================================================================
+[2025-03-03T13:01:49.541-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.65s           2025-03-03T19:01:21                      12
+================================================================================
+[2025-03-03T13:02:19.564-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.73s           2025-03-03T19:01:53                      12
+================================================================================
+[2025-03-03T13:02:49.785-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.90s           2025-03-03T19:02:43                      12
+================================================================================
+[2025-03-03T13:03:20.221-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.38s           2025-03-03T19:03:14                      12
+================================================================================
+[2025-03-03T13:03:50.751-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.54s           2025-03-03T19:03:45                      12
+================================================================================
+[2025-03-03T13:04:20.863-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.42s           2025-03-03T19:04:15                      12
+================================================================================
+[2025-03-03T13:04:51.153-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:04:46                      12
+================================================================================
+[2025-03-03T13:05:18.704-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:05:18.708-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:05:21.790-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:05:17                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.14s           2025-03-03T19:05:18                       3
+================================================================================
+[2025-03-03T13:05:52.312-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.31s           2025-03-03T19:05:47                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.10s           2025-03-03T19:05:45                       5
+================================================================================
+[2025-03-03T13:06:22.971-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:06:18                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.10s           2025-03-03T19:05:54                       5
+================================================================================
+[2025-03-03T13:06:53.446-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.39s           2025-03-03T19:06:48                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.16s           2025-03-03T19:06:25                       5
+================================================================================
+[2025-03-03T13:07:23.833-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:07:19                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.10s           2025-03-03T19:06:55                       5
+================================================================================
+[2025-03-03T13:07:54.255-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.40s           2025-03-03T19:07:49                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.13s           2025-03-03T19:07:25                       5
+================================================================================
+[2025-03-03T13:07:58.484-0600] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-03T13:08:22.123-0600] {manager.py:483} INFO - Processing files using up to 2 processes at a time 
+[2025-03-03T13:08:22.124-0600] {manager.py:484} INFO - Process each file at most once every 30 seconds
+[2025-03-03T13:08:22.125-0600] {manager.py:485} INFO - Checking for new files in /home/dataScience/Projects/Pipeline/airflow/dags every 300 seconds
+[2025-03-03T13:08:22.126-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:08:22.129-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:08:22.346-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run      Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  ----------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py  27416  0.05s             0           0                                                   0
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    27413  0.08s             0           0                                                   0
+================================================================================
+[2025-03-03T13:08:52.682-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.55s           2025-03-03T19:08:22                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    28683  0.01s             0           1  0.13s           2025-03-03T19:08:22                       5
+================================================================================
+[2025-03-03T13:09:23.183-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.52s           2025-03-03T19:08:53                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    29364  0.03s             0           1  0.17s           2025-03-03T19:08:52                       5
+================================================================================
+[2025-03-03T13:09:53.662-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.87s           2025-03-03T19:09:24                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.17s           2025-03-03T19:09:44                       5
+================================================================================
+[2025-03-03T13:10:24.117-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.45s           2025-03-03T19:09:55                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.15s           2025-03-03T19:10:07                       5
+================================================================================
+[2025-03-03T13:10:54.174-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.81s           2025-03-03T19:10:26                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             0           1  0.73s           2025-03-03T19:10:53                       5
+================================================================================
+[2025-03-03T13:11:30.022-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py  30051  32.84s            1           0  0.81s           2025-03-03T19:10:26                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    30069  0.07s             0           1  0.73s           2025-03-03T19:10:53                       5
+================================================================================
+[2025-03-03T13:12:08.683-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  38.07s          2025-03-03T19:11:34                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    30228  11.27s            0           1  5.40s           2025-03-03T19:11:34                       5
+================================================================================
+[2025-03-03T13:12:41.458-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  42.79s          2025-03-03T19:12:38                      45
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  8.57s           2025-03-03T19:12:38                      12
+================================================================================
+[2025-03-03T13:13:19.346-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                              PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py    30415  0.61s             1           0  42.79s          2025-03-03T19:12:38                      45
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py  30417  0.39s             1           0  8.57s           2025-03-03T19:12:38                      12
+================================================================================
+[2025-03-03T13:13:45.367-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:13:45.414-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:14:15.821-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  32.54s          2025-03-03T19:13:46                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  32.10s          2025-03-03T19:13:45                      12
+================================================================================
+[2025-03-03T13:14:46.085-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.67s           2025-03-03T19:14:17                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.30s           2025-03-03T19:14:16                      12
+================================================================================
+[2025-03-03T13:15:16.374-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.43s           2025-03-03T19:14:48                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.31s           2025-03-03T19:14:47                      12
+================================================================================
+[2025-03-03T13:15:46.505-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.48s           2025-03-03T19:15:17                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.44s           2025-03-03T19:15:19                      12
+================================================================================
+[2025-03-03T13:16:16.692-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.41s           2025-03-03T19:15:49                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:15:48                      12
+================================================================================
+[2025-03-03T13:16:47.303-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:16:20                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.31s           2025-03-03T19:16:19                      12
+================================================================================
+[2025-03-03T13:17:17.777-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:16:50                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:16:49                      12
+================================================================================
+[2025-03-03T13:17:48.285-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:17:21                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:17:20                      12
+================================================================================
+[2025-03-03T13:18:18.767-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:17:51                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:17:50                      12
+================================================================================
+[2025-03-03T13:18:45.608-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:18:45.613-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:18:49.282-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.38s           2025-03-03T19:18:22                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:18:21                      12
+================================================================================
+[2025-03-03T13:19:19.822-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:18:52                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:18:51                      12
+================================================================================
+[2025-03-03T13:19:50.301-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:19:23                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:19:22                      12
+================================================================================
+[2025-03-03T13:20:20.829-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.31s           2025-03-03T19:19:53                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:19:52                      12
+================================================================================
+[2025-03-03T13:20:51.330-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:20:24                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:20:23                      12
+================================================================================
+[2025-03-03T13:21:21.877-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:20:54                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:20:53                      12
+================================================================================
+[2025-03-03T13:21:52.372-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:21:25                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:21:24                      12
+================================================================================
+[2025-03-03T13:22:22.871-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:21:55                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:21:54                      12
+================================================================================
+[2025-03-03T13:22:53.361-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:22:26                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:22:25                      12
+================================================================================
+[2025-03-03T13:23:23.888-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.39s           2025-03-03T19:22:57                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:22:55                      12
+================================================================================
+[2025-03-03T13:23:45.667-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:23:45.671-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:23:54.382-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:23:27                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:23:26                      12
+================================================================================
+[2025-03-03T13:24:24.905-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:23:58                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:23:56                      12
+================================================================================
+[2025-03-03T13:24:55.437-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:24:28                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:24:27                      12
+================================================================================
+[2025-03-03T13:25:25.937-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.30s           2025-03-03T19:24:58                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:24:57                      12
+================================================================================
+[2025-03-03T13:25:56.452-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:25:29                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:25:28                      12
+================================================================================
+[2025-03-03T13:26:27.002-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:26:00                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.25s           2025-03-03T19:25:58                      12
+================================================================================
+[2025-03-03T13:26:57.550-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:26:30                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:26:29                      12
+================================================================================
+[2025-03-03T13:27:28.057-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:27:01                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:26:59                      12
+================================================================================
+[2025-03-03T13:27:58.579-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:27:31                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:27:30                      12
+================================================================================
+[2025-03-03T13:28:29.062-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:28:02                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:28:00                      12
+================================================================================
+[2025-03-03T13:28:45.818-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:28:45.821-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:28:59.586-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:28:32                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:28:31                      12
+================================================================================
+[2025-03-03T13:29:30.064-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:29:03                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:29:01                      12
+================================================================================
+[2025-03-03T13:30:00.562-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:29:33                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:29:32                      12
+================================================================================
+[2025-03-03T13:30:31.076-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:30:04                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:30:02                      12
+================================================================================
+[2025-03-03T13:31:01.681-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.38s           2025-03-03T19:30:34                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.29s           2025-03-03T19:30:33                      12
+================================================================================
+[2025-03-03T13:31:32.207-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:31:05                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:31:03                      12
+================================================================================
+[2025-03-03T13:32:02.760-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.38s           2025-03-03T19:31:35                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:31:34                      12
+================================================================================
+[2025-03-03T13:32:33.278-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:32:06                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:32:05                      12
+================================================================================
+[2025-03-03T13:33:03.846-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:32:36                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:32:35                      12
+================================================================================
+[2025-03-03T13:33:34.393-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:33:07                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:33:06                      12
+================================================================================
+[2025-03-03T13:33:46.047-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:33:46.050-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:34:04.912-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:33:37                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:33:36                      12
+================================================================================
+[2025-03-03T13:34:35.460-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:34:08                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:34:07                      12
+================================================================================
+[2025-03-03T13:35:05.995-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:34:39                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:34:37                      12
+================================================================================
+[2025-03-03T13:35:36.494-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:35:09                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:35:08                      12
+================================================================================
+[2025-03-03T13:36:06.982-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.30s           2025-03-03T19:35:40                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:35:38                      12
+================================================================================
+[2025-03-03T13:36:37.469-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.31s           2025-03-03T19:36:10                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.18s           2025-03-03T19:36:09                      12
+================================================================================
+[2025-03-03T13:37:07.997-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:36:41                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:36:39                      12
+================================================================================
+[2025-03-03T13:37:38.498-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.40s           2025-03-03T19:37:11                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:37:10                      12
+================================================================================
+[2025-03-03T13:38:09.049-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:37:42                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:37:40                      12
+================================================================================
+[2025-03-03T13:38:39.585-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:38:12                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:38:11                      12
+================================================================================
+[2025-03-03T13:38:46.205-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:38:46.208-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:39:10.071-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:38:43                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:38:41                      12
+================================================================================
+[2025-03-03T13:39:40.549-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:39:13                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.18s           2025-03-03T19:39:12                      12
+================================================================================
+[2025-03-03T13:40:11.045-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:39:44                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:39:42                      12
+================================================================================
+[2025-03-03T13:40:41.524-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:40:14                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.18s           2025-03-03T19:40:13                      12
+================================================================================
+[2025-03-03T13:41:12.066-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.31s           2025-03-03T19:40:45                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:40:43                      12
+================================================================================
+[2025-03-03T13:41:42.615-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:41:15                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:41:14                      12
+================================================================================
+[2025-03-03T13:42:12.656-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.50s           2025-03-03T19:41:46                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.27s           2025-03-03T19:41:44                      12
+================================================================================
+[2025-03-03T13:42:42.680-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:42:16                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:42:15                      12
+================================================================================
+[2025-03-03T13:43:13.205-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:42:47                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:42:45                      12
+================================================================================
+[2025-03-03T13:43:43.771-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:43:17                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:43:16                      12
+================================================================================
+[2025-03-03T13:43:46.796-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:43:46.799-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:44:14.336-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:43:48                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:43:47                      12
+================================================================================
+[2025-03-03T13:44:44.886-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:44:18                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.25s           2025-03-03T19:44:17                      12
+================================================================================
+[2025-03-03T13:45:15.394-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:44:49                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:44:48                      12
+================================================================================
+[2025-03-03T13:45:45.914-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:45:20                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:45:18                      12
+================================================================================
+[2025-03-03T13:46:16.415-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:45:50                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:45:49                      12
+================================================================================
+[2025-03-03T13:46:46.901-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.29s           2025-03-03T19:46:20                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.18s           2025-03-03T19:46:19                      12
+================================================================================
+[2025-03-03T13:47:17.411-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.41s           2025-03-03T19:46:51                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:46:50                      12
+================================================================================
+[2025-03-03T13:47:47.925-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.30s           2025-03-03T19:47:21                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:47:20                      12
+================================================================================
+[2025-03-03T13:48:18.422-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.31s           2025-03-03T19:47:52                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:47:51                      12
+================================================================================
+[2025-03-03T13:48:46.860-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:48:46.863-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:48:48.911-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.33s           2025-03-03T19:48:22                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.18s           2025-03-03T19:48:21                      12
+================================================================================
+[2025-03-03T13:49:19.433-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.38s           2025-03-03T19:48:53                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:48:52                      12
+================================================================================
+[2025-03-03T13:49:49.979-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:49:24                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:49:22                      12
+================================================================================
+[2025-03-03T13:50:20.541-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:49:54                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:49:53                      12
+================================================================================
+[2025-03-03T13:50:51.091-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.39s           2025-03-03T19:50:25                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:50:23                      12
+================================================================================
+[2025-03-03T13:51:21.607-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:50:55                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:50:54                      12
+================================================================================
+[2025-03-03T13:51:51.649-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.53s           2025-03-03T19:51:26                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.22s           2025-03-03T19:51:24                      12
+================================================================================
+[2025-03-03T13:52:21.722-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:51:56                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.30s           2025-03-03T19:51:55                      12
+================================================================================
+[2025-03-03T13:52:52.238-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.41s           2025-03-03T19:52:27                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:52:25                      12
+================================================================================
+[2025-03-03T13:53:22.762-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:52:57                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:52:56                      12
+================================================================================
+[2025-03-03T13:53:47.181-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:53:47.184-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:53:53.270-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.32s           2025-03-03T19:53:28                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.19s           2025-03-03T19:53:26                      12
+================================================================================
+[2025-03-03T13:54:23.444-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.63s           2025-03-03T19:53:59                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.40s           2025-03-03T19:53:57                      12
+================================================================================
+[2025-03-03T13:54:53.482-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:54:29                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.23s           2025-03-03T19:54:28                      12
+================================================================================
+[2025-03-03T13:55:23.975-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.34s           2025-03-03T19:55:00                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.20s           2025-03-03T19:54:58                      12
+================================================================================
+[2025-03-03T13:55:54.010-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.42s           2025-03-03T19:55:30                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.42s           2025-03-03T19:55:29                      12
+================================================================================
+[2025-03-03T13:56:24.229-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.35s           2025-03-03T19:56:01                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:55:59                      12
+================================================================================
+[2025-03-03T13:56:54.754-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.47s           2025-03-03T19:56:32                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:56:30                      12
+================================================================================
+[2025-03-03T13:57:25.310-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.45s           2025-03-03T19:57:02                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.27s           2025-03-03T19:57:01                      12
+================================================================================
+[2025-03-03T13:57:55.856-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.45s           2025-03-03T19:57:33                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.24s           2025-03-03T19:57:31                      12
+================================================================================
+[2025-03-03T13:58:26.368-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.44s           2025-03-03T19:58:03                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:58:02                      12
+================================================================================
+[2025-03-03T13:58:47.793-0600] {manager.py:821} INFO - Searching for files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:58:47.797-0600] {manager.py:824} INFO - There are 2 files in /home/dataScience/Projects/Pipeline/airflow/dags
+[2025-03-03T13:58:56.911-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.40s           2025-03-03T19:58:34                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.21s           2025-03-03T19:58:32                      12
+================================================================================
+[2025-03-03T13:59:27.488-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.36s           2025-03-03T19:59:04                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.28s           2025-03-03T19:59:03                      12
+================================================================================
+[2025-03-03T13:59:58.063-0600] {manager.py:997} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                            PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run               Last # of DB Queries
+-------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------  ----------------------
+/home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py                           1           0  0.37s           2025-03-03T19:59:35                      12
+/home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py                             1           0  0.26s           2025-03-03T19:59:33                      12
+================================================================================
+[2025-03-03T14:00:15.460-0600] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
