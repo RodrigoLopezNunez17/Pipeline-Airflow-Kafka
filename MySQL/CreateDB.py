@@ -60,25 +60,28 @@ if __name__ == "__main__":
     else:
         print("The database and table already exist!")
 
-    look_inside = input("Do you want to see the databases and tables? [db/tab/both] : ")
+    look_inside = input("Do you want to see the databases and tables? [db/tab/both/none] : ")
+    
+    match look_inside:
+        case "db":
+            print(f"\nHere's the list of databases : ")
+            print("Introduce the password for 'root' user when prompted.")
+            subprocess.run("mysql -u root -p --execute 'SHOW DATABASES;'", shell = True)
+        case "tab":
+            print(f"\n")
+            print("Here's the list of columms of the table 'WeatherData' : ")
+            print("Introduce the password for 'root' when prompted.")
+            subprocess.run("mysql -u root -p --execute 'SHOW COLUMNS FROM Weather.WeatherData;'", shell = True)
+        case "both":
+            print(f"\nHere's the list of databases : ")
+            print("Introduce the password for 'root' user when prompted.")
+            subprocess.run("mysql -u root -p --execute 'SHOW DATABASES;'", shell = True)
 
-    if look_inside == "db":
-        print(f"\nHere's the list of databases : ")
-        print("Introduce the password for 'root' user when prompted.")
-        subprocess.run("mysql -u root -p --execute 'SHOW DATABASES;'", shell = True)
-    elif look_inside == "tab":
-        print(f"\n")
-        print("Here's the list of columms of the table 'WeatherData' : ")
-        print("Introduce the password for 'root' when prompted.")
-        subprocess.run("mysql -u root -p --execute 'SHOW COLUMNS FROM Weather.WeatherData;'", shell = True)
-    elif look_inside == "both":
-        print(f"\nHere's the list of databases : ")
-        print("Introduce the password for 'root' user when prompted.")
-        subprocess.run("mysql -u root -p --execute 'SHOW DATABASES;'", shell = True)
+            print(f"\n")
+            print("Here's the list of columms of the table 'WeatherData' : ")
+            print("Introduce the password 'root' when prompted.")
+            subprocess.run("mysql -u root -p --execute 'SHOW COLUMNS FROM Weather.WeatherData;'", shell = True)
+        case "none":
+            print("\nNone is being showed\n")
 
-        print(f"\n")
-        print("Here's the list of columms of the table 'WeatherData' : ")
-        print("Introduce the password 'root' when prompted.")
-        subprocess.run("mysql -u root -p --execute 'SHOW COLUMNS FROM Weather.WeatherData;'", shell = True)
-
-    print(f"\nBye!\n")
+    subprocess.run("cowsay 'Bye!'", shell = True)
