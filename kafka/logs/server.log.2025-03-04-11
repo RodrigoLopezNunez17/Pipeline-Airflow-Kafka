@@ -1,0 +1,5 @@
+[2025-03-04 12:05:47,480] INFO Expiring session 0x100000167950000, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-04 12:06:29,314] INFO Invalid session 0x100000167950000 for client /127.0.0.1:59502, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-04 12:11:36,435] INFO Expiring session 0x100000167950001, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2025-03-04 12:12:04,496] INFO Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:59518, session = 0x100000167950001 (org.apache.zookeeper.server.NIOServerCnxn)
+[2025-03-04 12:12:05,263] INFO Invalid session 0x100000167950001 for client /127.0.0.1:37956, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
