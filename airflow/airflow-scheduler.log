@@ -444,3 +444,679 @@
 2025-03-03 14:00:16,922 INFO - Sending the signal Signals.SIGTERM to group 27405
 2025-03-03 14:00:16,923 INFO - Sending the signal Signals.SIGTERM to process 27405 as process group is missing.
 2025-03-03 14:00:16,923 INFO - Exited execute loop
+2025-03-04 11:54:42,224 INFO - Loaded executor: LocalExecutor
+2025-03-04 11:54:42,433 INFO - Starting the scheduler
+2025-03-04 11:54:42,443 INFO - Processing each file at most -1 times
+2025-03-04 11:54:43,973 INFO - Launched DagFileProcessorManager with pid: 1889
+2025-03-04 11:54:44,038 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 11:54:44,083 INFO - Configured default timezone UTC
+2025-03-04 11:54:45,263 INFO - Setting next_dagrun for EtlWeather to 2025-03-04 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+2025-03-04 11:54:46,569 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 11:54:46,571 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 11:54:46,573 INFO - DAG EtlWeather has 1/16 running and queued tasks
+2025-03-04 11:54:46,574 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 11:54:46,586 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 11:54:46,589 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 11:54:46,590 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 11:54:46,592 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 11:54:46,594 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 11:54:46,637 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 11:54:46,635 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 11:54:47,034 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 11:54:47,075 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 11:54:48,053 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 11:54:48,093 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 11:54:50,604 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 11:54:50,624 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-03-03T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 17:54:48.273309+00:00, run_end_date=2025-03-04 17:54:49.300225+00:00, run_duration=1.02692, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=68, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 17:54:46.577856+00:00, queued_by_job_id=67, pid=1972
+2025-03-04 11:55:14,517 ERROR - Marking run <DagRun EtlWeather @ 2025-03-03 00:00:00+00:00: scheduled__2025-03-03T00:00:00+00:00, state:running, queued_at: 2025-03-04 17:54:45.134158+00:00. externally triggered: False> failed
+2025-03-04 11:55:14,522 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-03 00:00:00+00:00, run_id=scheduled__2025-03-03T00:00:00+00:00, run_start_date=2025-03-04 17:54:45.408041+00:00, run_end_date=2025-03-04 17:55:14.521987+00:00, run_duration=29.113946, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-03-03 00:00:00+00:00, data_interval_end=2025-03-04 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 11:55:14,538 INFO - Setting next_dagrun for EtlWeather to 2025-03-04 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+2025-03-04 11:55:14,581 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 11:55:14,590 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-03T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 17:54:48.337699+00:00, run_end_date=2025-03-04 17:55:13.925530+00:00, run_duration=25.5878, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=69, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 17:54:46.577856+00:00, queued_by_job_id=67, pid=1975
+2025-03-04 11:55:53,130 INFO - Setting next_dagrun for DataAnalysis to 2025-03-02 00:00:00+00:00, run_after=2025-03-09 00:00:00+00:00
+2025-03-04 11:55:53,258 INFO - 2 tasks up for execution:
+	<TaskInstance: DataAnalysis.Analysis scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+	<TaskInstance: DataAnalysis.GettingData scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+2025-03-04 11:55:53,259 INFO - DAG DataAnalysis has 0/16 running and queued tasks
+2025-03-04 11:55:53,261 INFO - DAG DataAnalysis has 1/16 running and queued tasks
+2025-03-04 11:55:53,262 INFO - Setting the following tasks to queued state:
+	<TaskInstance: DataAnalysis.Analysis scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+	<TaskInstance: DataAnalysis.GettingData scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+2025-03-04 11:55:53,269 INFO - Trying to enqueue tasks: [<TaskInstance: DataAnalysis.Analysis scheduled__2025-02-23T00:00:00+00:00 [scheduled]>, <TaskInstance: DataAnalysis.GettingData scheduled__2025-02-23T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 11:55:53,274 INFO - Sending TaskInstanceKey(dag_id='DataAnalysis', task_id='Analysis', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 11:55:53,276 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'DataAnalysis', 'Analysis', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataAnalytics.py']
+2025-03-04 11:55:53,277 INFO - Sending TaskInstanceKey(dag_id='DataAnalysis', task_id='GettingData', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 11:55:53,278 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'DataAnalysis', 'GettingData', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataAnalytics.py']
+2025-03-04 11:55:53,330 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'DataAnalysis', 'Analysis', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataAnalytics.py']
+2025-03-04 11:55:53,335 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'DataAnalysis', 'GettingData', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataAnalytics.py']
+2025-03-04 11:55:53,527 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py
+2025-03-04 11:55:53,541 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataAnalytics.py
+2025-03-04 11:55:53,877 INFO - Running <TaskInstance: DataAnalysis.GettingData scheduled__2025-02-23T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 11:55:53,900 INFO - Running <TaskInstance: DataAnalysis.Analysis scheduled__2025-02-23T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 11:55:57,082 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='DataAnalysis', task_id='Analysis', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 11:55:57,083 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='DataAnalysis', task_id='GettingData', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 11:55:57,094 INFO - TaskInstance Finished: dag_id=DataAnalysis, task_id=Analysis, run_id=scheduled__2025-02-23T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 17:55:54.154690+00:00, run_end_date=2025-03-04 17:55:56.684395+00:00, run_duration=2.52971, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=70, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 17:55:53.263978+00:00, queued_by_job_id=67, pid=3363
+2025-03-04 11:55:57,097 INFO - TaskInstance Finished: dag_id=DataAnalysis, task_id=GettingData, run_id=scheduled__2025-02-23T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 17:55:54.154484+00:00, run_end_date=2025-03-04 17:55:56.678360+00:00, run_duration=2.52388, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=71, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 17:55:53.263978+00:00, queued_by_job_id=67, pid=3365
+2025-03-04 11:56:44,455 INFO - Marking run <DagRun DataAnalysis @ 2025-02-23 00:00:00+00:00: scheduled__2025-02-23T00:00:00+00:00, state:running, queued_at: 2025-03-04 17:55:53.093027+00:00. externally triggered: False> successful
+2025-03-04 11:56:44,482 INFO - DagRun Finished: dag_id=DataAnalysis, execution_date=2025-02-23 00:00:00+00:00, run_id=scheduled__2025-02-23T00:00:00+00:00, run_start_date=2025-03-04 17:55:53.171994+00:00, run_end_date=2025-03-04 17:56:44.481930+00:00, run_duration=51.309936, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-23 00:00:00+00:00, data_interval_end=2025-03-02 00:00:00+00:00, dag_hash=4363777de50eb7b5ec8b98dd25597acf
+2025-03-04 11:59:44,408 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:05:10,066 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:06:26,528 INFO - Marked 1 SchedulerJob instances as failed
+2025-03-04 12:06:30,954 INFO - Heartbeat recovered after 153.33 seconds
+2025-03-04 12:08:09,590 INFO - Heartbeat recovered after 32.84 seconds
+2025-03-04 12:12:05,403 INFO - Heartbeat recovered after 140.87 seconds
+2025-03-04 12:12:05,808 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:12:50,947 INFO - Exiting gracefully upon receiving signal 15
+2025-03-04 12:12:52,037 INFO - Sending Signals.SIGTERM to group 1889. PIDs of all processes in the group: [1889]
+2025-03-04 12:12:52,043 INFO - Sending the signal Signals.SIGTERM to group 1889
+2025-03-04 12:12:52,075 INFO - Process psutil.Process(pid=1889, status='terminated', exitcode=0, started='11:54:43') (1889) terminated with exit code 0
+2025-03-04 12:12:52,099 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-03-04 12:12:53,112 INFO - Sending Signals.SIGTERM to group 1889. PIDs of all processes in the group: []
+2025-03-04 12:12:53,113 INFO - Sending the signal Signals.SIGTERM to group 1889
+2025-03-04 12:12:53,132 INFO - Sending the signal Signals.SIGTERM to process 1889 as process group is missing.
+2025-03-04 12:12:53,144 INFO - Exited execute loop
+2025-03-04 12:19:19,277 INFO - Loaded executor: LocalExecutor
+2025-03-04 12:19:19,363 INFO - Starting the scheduler
+2025-03-04 12:19:19,366 INFO - Processing each file at most -1 times
+2025-03-04 12:19:19,757 INFO - Launched DagFileProcessorManager with pid: 15050
+2025-03-04 12:19:19,764 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:19:19,785 INFO - Configured default timezone UTC
+2025-03-04 12:24:19,903 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:27:11,727 INFO - Setting next_dagrun for EtlWeather to 2025-02-20 00:00:00+00:00, run_after=2025-02-21 00:00:00+00:00
+2025-03-04 12:27:11,892 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-19T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-19T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:11,893 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 12:27:11,893 INFO - DAG EtlWeather has 1/16 running and queued tasks
+2025-03-04 12:27:11,894 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-19T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-19T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:11,899 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-19T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-19T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:11,905 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-19T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:11,906 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-19T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:11,906 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-19T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:11,907 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-19T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:11,976 INFO - Setting next_dagrun for EtlWeather to 2025-02-21 00:00:00+00:00, run_after=2025-02-22 00:00:00+00:00
+2025-03-04 12:27:11,975 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-19T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:11,991 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-19T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,080 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-20T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-20T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,081 INFO - DAG EtlWeather has 2/16 running and queued tasks
+2025-03-04 12:27:12,082 INFO - DAG EtlWeather has 3/16 running and queued tasks
+2025-03-04 12:27:12,083 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-20T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-20T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,090 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-20T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-20T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:12,092 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-20T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:12,092 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-20T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,094 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-20T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:12,095 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-20T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,137 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-20T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,156 INFO - Setting next_dagrun for EtlWeather to 2025-02-22 00:00:00+00:00, run_after=2025-02-23 00:00:00+00:00
+2025-03-04 12:27:12,153 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-20T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,269 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-21T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-21T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,270 INFO - DAG EtlWeather has 4/16 running and queued tasks
+2025-03-04 12:27:12,270 INFO - DAG EtlWeather has 5/16 running and queued tasks
+2025-03-04 12:27:12,271 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-21T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-21T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,276 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-21T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-21T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:12,277 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-21T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:12,278 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-21T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,278 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-21T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:12,279 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-21T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,304 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-21T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,317 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-21T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,356 INFO - Setting next_dagrun for EtlWeather to 2025-02-23 00:00:00+00:00, run_after=2025-02-24 00:00:00+00:00
+2025-03-04 12:27:12,497 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-22T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-22T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,498 INFO - DAG EtlWeather has 6/16 running and queued tasks
+2025-03-04 12:27:12,502 INFO - DAG EtlWeather has 7/16 running and queued tasks
+2025-03-04 12:27:12,503 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-22T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-22T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,508 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-22T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-22T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:12,509 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-22T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:12,511 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-22T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,512 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-22T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:12,512 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-22T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,542 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-22T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,556 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-22T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,568 INFO - Setting next_dagrun for EtlWeather to 2025-02-24 00:00:00+00:00, run_after=2025-02-25 00:00:00+00:00
+2025-03-04 12:27:12,727 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,727 INFO - DAG EtlWeather has 8/16 running and queued tasks
+2025-03-04 12:27:12,728 INFO - DAG EtlWeather has 9/16 running and queued tasks
+2025-03-04 12:27:12,729 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-23T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:12,736 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-23T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-23T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:12,737 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:12,738 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,740 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:12,741 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,926 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,933 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-23T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:12,961 INFO - Setting next_dagrun for EtlWeather to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+2025-03-04 12:27:12,943 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,944 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,924 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,934 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,923 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,921 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,926 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:12,927 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:13,369 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-24T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-24T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:13,370 INFO - DAG EtlWeather has 10/16 running and queued tasks
+2025-03-04 12:27:13,371 INFO - DAG EtlWeather has 11/16 running and queued tasks
+2025-03-04 12:27:13,372 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-24T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-24T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:13,386 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-24T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-24T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:13,373 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:13,388 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-24T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:13,389 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-24T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:13,391 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-24T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:13,392 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-24T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:13,405 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:13,585 INFO - Setting next_dagrun for EtlWeather to 2025-02-26 00:00:00+00:00, run_after=2025-02-27 00:00:00+00:00
+2025-03-04 12:27:13,574 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-24T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:13,571 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-24T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,224 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-25T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:14,225 INFO - DAG EtlWeather has 12/16 running and queued tasks
+2025-03-04 12:27:14,226 INFO - DAG EtlWeather has 13/16 running and queued tasks
+2025-03-04 12:27:14,227 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-25T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:14,234 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-25T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:14,235 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-25T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:14,236 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,237 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-25T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:14,238 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,225 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:14,280 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:14,355 INFO - Setting next_dagrun for EtlWeather to 2025-02-27 00:00:00+00:00, run_after=2025-02-28 00:00:00+00:00
+2025-03-04 12:27:14,302 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,320 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-25T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,908 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:14,909 INFO - DAG EtlWeather has 14/16 running and queued tasks
+2025-03-04 12:27:14,910 INFO - DAG EtlWeather has 15/16 running and queued tasks
+2025-03-04 12:27:14,915 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-26T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:14,922 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-26T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:14,926 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-26T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:14,927 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:14,928 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-26T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:14,929 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:15,090 INFO - Setting next_dagrun for EtlWeather to 2025-02-28 00:00:00+00:00, run_after=2025-03-01 00:00:00+00:00
+2025-03-04 12:27:15,050 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:15,054 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:15,055 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:15,042 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-26T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:17,386 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:17,387 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:17,388 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:17,390 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:17,390 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:17,388 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:17,384 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:18,559 INFO - Setting next_dagrun for EtlWeather to 2025-03-01 00:00:00+00:00, run_after=2025-03-02 00:00:00+00:00
+2025-03-04 12:27:19,162 INFO - 4 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:19,163 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:19,164 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:19,165 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:19,166 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:19,168 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:19,169 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:19,170 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:19,171 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:22,786 INFO - Setting next_dagrun for EtlWeather to 2025-03-02 00:00:00+00:00, run_after=2025-03-03 00:00:00+00:00
+2025-03-04 12:27:23,753 INFO - 6 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:23,757 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,758 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:23,759 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,764 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:23,765 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,767 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:23,775 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,777 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:23,779 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,780 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:23,783 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:23,784 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:25,112 INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+2025-03-04 12:27:25,773 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-23T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,772 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-24T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,887 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-24T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,903 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-25T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,955 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-20T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,969 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-19T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:25,988 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,001 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-23T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,007 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-25T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,049 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-22T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,068 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-22T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,069 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-26T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,069 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-21T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,115 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-20T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,117 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-21T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,175 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-19T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:26,290 INFO - 8 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:26,295 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,297 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,299 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,301 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,302 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,305 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,309 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,312 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,315 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,317 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,318 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,320 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,324 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,331 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:26,332 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:26,333 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:27,481 INFO - Setting next_dagrun for EtlWeather to 2025-03-04 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+2025-03-04 12:27:28,445 INFO - 10 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:28,446 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,447 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,448 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,451 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,460 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,462 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,463 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,464 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,465 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,466 INFO - Not executing <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,474 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,478 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,480 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,481 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,482 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,483 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,485 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,491 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:28,493 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:28,496 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:29,388 INFO - 10 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:29,389 INFO - DAG EtlWeather has 10/16 running and queued tasks
+2025-03-04 12:27:29,390 INFO - DAG EtlWeather has 11/16 running and queued tasks
+2025-03-04 12:27:29,396 INFO - DAG EtlWeather has 12/16 running and queued tasks
+2025-03-04 12:27:29,397 INFO - DAG EtlWeather has 13/16 running and queued tasks
+2025-03-04 12:27:29,398 INFO - DAG EtlWeather has 14/16 running and queued tasks
+2025-03-04 12:27:29,400 INFO - DAG EtlWeather has 15/16 running and queued tasks
+2025-03-04 12:27:29,401 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:29,402 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:29,403 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:29,405 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:29,406 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:29,407 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:29,408 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:29,409 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:29,411 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:29,435 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:29,438 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-27T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:29,438 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-27T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,440 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-28T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:29,441 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-28T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,442 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-01T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:29,443 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,444 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:29,445 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,446 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:27:29,447 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,448 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-27T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:29,449 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-27T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,511 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-19T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,512 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-22T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,514 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-26T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,515 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,517 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-20T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,518 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-24T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:29,553 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-19T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.914303+00:00, run_end_date=2025-03-04 18:27:28.648111+00:00, run_duration=1.73381, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=14, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:11.896039+00:00, queued_by_job_id=1, pid=19684
+2025-03-04 12:27:29,562 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-20T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.626221+00:00, run_end_date=2025-03-04 18:27:28.759189+00:00, run_duration=2.13297, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=4, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.084924+00:00, queued_by_job_id=1, pid=19660
+2025-03-04 12:27:29,545 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,564 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-22T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.691894+00:00, run_end_date=2025-03-04 18:27:28.666579+00:00, run_duration=1.97468, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=13, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.505290+00:00, queued_by_job_id=1, pid=19666
+2025-03-04 12:27:29,533 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-27T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,566 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-23T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.810078+00:00, run_end_date=2025-03-04 18:27:28.841609+00:00, run_duration=2.03153, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=15, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.732240+00:00, queued_by_job_id=1, pid=19675
+2025-03-04 12:27:29,569 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-24T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.732020+00:00, run_end_date=2025-03-04 18:27:28.677174+00:00, run_duration=1.94515, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=11, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:13.380861+00:00, queued_by_job_id=1, pid=19671
+2025-03-04 12:27:29,548 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-27T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,539 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-02-28T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,578 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-26T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.689743+00:00, run_end_date=2025-03-04 18:27:28.674546+00:00, run_duration=1.9848, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=9, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:14.917242+00:00, queued_by_job_id=1, pid=19663
+2025-03-04 12:27:29,572 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,590 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'scheduled__2025-03-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:29,771 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:29,783 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:29,786 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:29,796 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:29,811 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:29,835 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:30,214 INFO - 4 tasks up for execution:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:30,215 INFO - DAG EtlWeather has 14/16 running and queued tasks
+2025-03-04 12:27:30,227 INFO - DAG EtlWeather has 15/16 running and queued tasks
+2025-03-04 12:27:30,228 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:30,229 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:30,230 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:30,231 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:30,233 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:30,253 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:30,261 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-28T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:30,265 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-28T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:30,267 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-01T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:30,268 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:30,309 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-25T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:30,311 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-21T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:30,338 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-21T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.801702+00:00, run_end_date=2025-03-04 18:27:29.390639+00:00, run_duration=2.58894, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=10, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.272872+00:00, queued_by_job_id=1, pid=19683
+2025-03-04 12:27:30,342 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-25T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.816954+00:00, run_end_date=2025-03-04 18:27:29.387628+00:00, run_duration=2.57067, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=16, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:14.229520+00:00, queued_by_job_id=1, pid=19676
+2025-03-04 12:27:30,433 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-28T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:30,422 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-01T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:30,818 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:30,862 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:31,130 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:31,131 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:31,136 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:31,137 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:31,141 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:31,149 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-03T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:31,178 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-02T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:31,222 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-03-01T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:31,255 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-28T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:31,267 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-27T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:31,274 INFO - Running <TaskInstance: EtlWeather.WeatherAPI scheduled__2025-02-27T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:32,323 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-28T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:32,357 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-01T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:32,610 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:32,611 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:32,612 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:32,613 INFO - DAG EtlWeather has 16/16 running and queued tasks
+2025-03-04 12:27:32,614 INFO - Not executing <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]> since the number of tasks running or queued from DAG EtlWeather is >= to the DAG's max_active_tasks limit of 16
+2025-03-04 12:27:33,941 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:33,942 INFO - DAG EtlWeather has 11/16 running and queued tasks
+2025-03-04 12:27:33,943 INFO - DAG EtlWeather has 12/16 running and queued tasks
+2025-03-04 12:27:33,944 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>
+2025-03-04 12:27:33,952 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:27:33,953 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:33,955 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:33,956 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:27:33,957 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:33,987 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-01T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:33,988 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:33,989 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:33,990 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-27T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:33,991 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='scheduled__2025-02-28T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:27:34,003 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-27T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.591310+00:00, run_end_date=2025-03-04 18:27:32.923794+00:00, run_duration=1.33248, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=23, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19744
+2025-03-04 12:27:34,004 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-02-28T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.689040+00:00, run_end_date=2025-03-04 18:27:33.090728+00:00, run_duration=1.40169, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=22, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19753
+2025-03-04 12:27:34,006 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-03-01T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.559434+00:00, run_end_date=2025-03-04 18:27:32.636664+00:00, run_duration=1.07723, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=20, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19743
+2025-03-04 12:27:34,007 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-03-02T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.573802+00:00, run_end_date=2025-03-04 18:27:32.893052+00:00, run_duration=1.31925, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=19, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19747
+2025-03-04 12:27:34,008 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=scheduled__2025-03-03T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.447863+00:00, run_end_date=2025-03-04 18:27:32.627115+00:00, run_duration=1.17925, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=18, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19741
+2025-03-04 12:27:34,018 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-02T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:34,022 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:27:34,122 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:34,129 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:27:34,738 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:27:34,756 INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-02T00:00:00+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:29:07,921 INFO - Heartbeat recovered after 71.52 seconds
+2025-03-04 12:29:20,307 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:32:13,541 INFO - Heartbeat recovered after 127.71 seconds
+2025-03-04 12:32:31,731 ERROR - Marking run <DagRun EtlWeather @ 2025-02-25 00:00:00+00:00: scheduled__2025-02-25T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:13.555662+00:00. externally triggered: False> failed
+2025-03-04 12:32:31,744 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-25 00:00:00+00:00, run_id=scheduled__2025-02-25T00:00:00+00:00, run_start_date=2025-03-04 18:27:13.631482+00:00, run_end_date=2025-03-04 18:32:31.735651+00:00, run_duration=318.104169, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-25 00:00:00+00:00, data_interval_end=2025-02-26 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:31,816 INFO - Setting next_dagrun for EtlWeather to 2025-02-26 00:00:00+00:00, run_after=2025-02-27 00:00:00+00:00
+2025-03-04 12:32:31,840 ERROR - Marking run <DagRun EtlWeather @ 2025-02-24 00:00:00+00:00: scheduled__2025-02-24T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:12.936859+00:00. externally triggered: False> failed
+2025-03-04 12:32:31,842 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-24 00:00:00+00:00, run_id=scheduled__2025-02-24T00:00:00+00:00, run_start_date=2025-03-04 18:27:12.988393+00:00, run_end_date=2025-03-04 18:32:31.842385+00:00, run_duration=318.853992, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-24 00:00:00+00:00, data_interval_end=2025-02-25 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:31,870 INFO - Setting next_dagrun for EtlWeather to 2025-02-25 00:00:00+00:00, run_after=2025-02-26 00:00:00+00:00
+2025-03-04 12:32:31,891 ERROR - Marking run <DagRun EtlWeather @ 2025-02-23 00:00:00+00:00: scheduled__2025-02-23T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:12.554153+00:00. externally triggered: False> failed
+2025-03-04 12:32:31,892 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-23 00:00:00+00:00, run_id=scheduled__2025-02-23T00:00:00+00:00, run_start_date=2025-03-04 18:27:12.594482+00:00, run_end_date=2025-03-04 18:32:31.892530+00:00, run_duration=319.298048, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-23 00:00:00+00:00, data_interval_end=2025-02-24 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:31,911 INFO - Setting next_dagrun for EtlWeather to 2025-02-24 00:00:00+00:00, run_after=2025-02-25 00:00:00+00:00
+2025-03-04 12:32:31,928 ERROR - Marking run <DagRun EtlWeather @ 2025-02-22 00:00:00+00:00: scheduled__2025-02-22T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:12.342131+00:00. externally triggered: False> failed
+2025-03-04 12:32:31,930 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-22 00:00:00+00:00, run_id=scheduled__2025-02-22T00:00:00+00:00, run_start_date=2025-03-04 18:27:12.384549+00:00, run_end_date=2025-03-04 18:32:31.930429+00:00, run_duration=319.54588, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-22 00:00:00+00:00, data_interval_end=2025-02-23 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:31,944 INFO - Setting next_dagrun for EtlWeather to 2025-02-23 00:00:00+00:00, run_after=2025-02-24 00:00:00+00:00
+2025-03-04 12:32:31,966 ERROR - Marking run <DagRun EtlWeather @ 2025-02-21 00:00:00+00:00: scheduled__2025-02-21T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:12.142002+00:00. externally triggered: False> failed
+2025-03-04 12:32:31,967 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-21 00:00:00+00:00, run_id=scheduled__2025-02-21T00:00:00+00:00, run_start_date=2025-03-04 18:27:12.176882+00:00, run_end_date=2025-03-04 18:32:31.967657+00:00, run_duration=319.790775, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-21 00:00:00+00:00, data_interval_end=2025-02-22 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:31,987 INFO - Setting next_dagrun for EtlWeather to 2025-02-22 00:00:00+00:00, run_after=2025-02-23 00:00:00+00:00
+2025-03-04 12:32:32,002 ERROR - Marking run <DagRun EtlWeather @ 2025-02-20 00:00:00+00:00: scheduled__2025-02-20T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:11.963430+00:00. externally triggered: False> failed
+2025-03-04 12:32:32,004 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-20 00:00:00+00:00, run_id=scheduled__2025-02-20T00:00:00+00:00, run_start_date=2025-03-04 18:27:11.996933+00:00, run_end_date=2025-03-04 18:32:32.003850+00:00, run_duration=320.006917, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-20 00:00:00+00:00, data_interval_end=2025-02-21 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:32,018 INFO - Setting next_dagrun for EtlWeather to 2025-02-21 00:00:00+00:00, run_after=2025-02-22 00:00:00+00:00
+2025-03-04 12:32:32,031 ERROR - Marking run <DagRun EtlWeather @ 2025-02-19 00:00:00+00:00: scheduled__2025-02-19T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:11.653767+00:00. externally triggered: False> failed
+2025-03-04 12:32:32,033 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-19 00:00:00+00:00, run_id=scheduled__2025-02-19T00:00:00+00:00, run_start_date=2025-03-04 18:27:11.758535+00:00, run_end_date=2025-03-04 18:32:32.033009+00:00, run_duration=320.274474, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-19 00:00:00+00:00, data_interval_end=2025-02-20 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:32,047 INFO - Setting next_dagrun for EtlWeather to 2025-02-20 00:00:00+00:00, run_after=2025-02-21 00:00:00+00:00
+2025-03-04 12:32:32,190 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-25T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,191 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-23T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,192 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-19T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,194 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-22T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,195 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-21T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,196 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-20T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,197 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-24T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,218 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-19T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.810322+00:00, run_end_date=2025-03-04 18:32:30.680905+00:00, run_duration=303.871, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=17, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:11.896039+00:00, queued_by_job_id=1, pid=19681
+2025-03-04 12:32:32,231 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-20T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.677688+00:00, run_end_date=2025-03-04 18:32:30.890591+00:00, run_duration=304.213, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=8, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.084924+00:00, queued_by_job_id=1, pid=19670
+2025-03-04 12:32:32,232 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-21T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.507704+00:00, run_end_date=2025-03-04 18:32:31.019061+00:00, run_duration=304.511, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=2, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.272872+00:00, queued_by_job_id=1, pid=19653
+2025-03-04 12:32:32,234 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-22T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.637084+00:00, run_end_date=2025-03-04 18:32:30.848915+00:00, run_duration=304.212, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=12, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.505290+00:00, queued_by_job_id=1, pid=19658
+2025-03-04 12:32:32,235 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-23T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.765405+00:00, run_end_date=2025-03-04 18:32:30.498017+00:00, run_duration=303.733, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=6, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:12.732240+00:00, queued_by_job_id=1, pid=19667
+2025-03-04 12:32:32,236 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-24T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.591931+00:00, run_end_date=2025-03-04 18:32:31.314108+00:00, run_duration=304.722, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:13.380861+00:00, queued_by_job_id=1, pid=19662
+2025-03-04 12:32:32,238 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-25T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.504713+00:00, run_end_date=2025-03-04 18:32:30.340192+00:00, run_duration=303.835, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:14.229520+00:00, queued_by_job_id=1, pid=19655
+2025-03-04 12:32:32,586 INFO - Setting next_dagrun for EtlWeather to 2025-02-21 00:00:00+00:00, run_after=2025-02-22 00:00:00+00:00
+2025-03-04 12:32:32,633 ERROR - Marking run <DagRun EtlWeather @ 2025-02-26 00:00:00+00:00: scheduled__2025-02-26T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:14.315979+00:00. externally triggered: False> failed
+2025-03-04 12:32:32,634 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-26 00:00:00+00:00, run_id=scheduled__2025-02-26T00:00:00+00:00, run_start_date=2025-03-04 18:27:14.405346+00:00, run_end_date=2025-03-04 18:32:32.634747+00:00, run_duration=318.229401, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-26 00:00:00+00:00, data_interval_end=2025-02-27 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:32,645 INFO - Setting next_dagrun for EtlWeather to 2025-02-27 00:00:00+00:00, run_after=2025-02-28 00:00:00+00:00
+2025-03-04 12:32:32,745 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-26T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:32,774 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-26T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:26.749096+00:00, run_end_date=2025-03-04 18:32:31.378128+00:00, run_duration=304.629, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=7, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:14.917242+00:00, queued_by_job_id=1, pid=19673
+2025-03-04 12:32:32,840 INFO - Setting next_dagrun for EtlWeather to 2025-02-28 00:00:00+00:00, run_after=2025-03-01 00:00:00+00:00
+2025-03-04 12:32:34,017 INFO - Setting next_dagrun for EtlWeather to 2025-03-01 00:00:00+00:00, run_after=2025-03-02 00:00:00+00:00
+2025-03-04 12:32:34,079 ERROR - Marking run <DagRun EtlWeather @ 2025-02-27 00:00:00+00:00: scheduled__2025-02-27T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:15.043421+00:00. externally triggered: False> failed
+2025-03-04 12:32:34,081 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-27 00:00:00+00:00, run_id=scheduled__2025-02-27T00:00:00+00:00, run_start_date=2025-03-04 18:27:15.176149+00:00, run_end_date=2025-03-04 18:32:34.080916+00:00, run_duration=318.904767, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-27 00:00:00+00:00, data_interval_end=2025-02-28 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:34,093 INFO - Setting next_dagrun for EtlWeather to 2025-02-28 00:00:00+00:00, run_after=2025-03-01 00:00:00+00:00
+2025-03-04 12:32:34,179 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-27T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:34,191 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-27T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:31.581927+00:00, run_end_date=2025-03-04 18:32:33.248650+00:00, run_duration=301.667, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=21, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:29.418355+00:00, queued_by_job_id=1, pid=19750
+2025-03-04 12:32:35,246 INFO - Setting next_dagrun for EtlWeather to 2025-03-01 00:00:00+00:00, run_after=2025-03-02 00:00:00+00:00
+2025-03-04 12:32:35,292 ERROR - Marking run <DagRun EtlWeather @ 2025-03-01 00:00:00+00:00: scheduled__2025-03-01T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:22.703917+00:00. externally triggered: False> failed
+2025-03-04 12:32:35,293 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-01 00:00:00+00:00, run_id=scheduled__2025-03-01T00:00:00+00:00, run_start_date=2025-03-04 18:27:22.991021+00:00, run_end_date=2025-03-04 18:32:35.293022+00:00, run_duration=312.302001, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-03-01 00:00:00+00:00, data_interval_end=2025-03-02 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:35,304 INFO - Setting next_dagrun for EtlWeather to 2025-03-02 00:00:00+00:00, run_after=2025-03-03 00:00:00+00:00
+2025-03-04 12:32:35,313 ERROR - Marking run <DagRun EtlWeather @ 2025-02-28 00:00:00+00:00: scheduled__2025-02-28T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:18.518749+00:00. externally triggered: False> failed
+2025-03-04 12:32:35,314 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-02-28 00:00:00+00:00, run_id=scheduled__2025-02-28T00:00:00+00:00, run_start_date=2025-03-04 18:27:18.663597+00:00, run_end_date=2025-03-04 18:32:35.314571+00:00, run_duration=316.650974, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-02-28 00:00:00+00:00, data_interval_end=2025-03-01 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:35,327 INFO - Setting next_dagrun for EtlWeather to 2025-03-01 00:00:00+00:00, run_after=2025-03-02 00:00:00+00:00
+2025-03-04 12:32:35,391 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-01T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:35,393 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-02-28T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:35,404 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-28T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:32.509451+00:00, run_end_date=2025-03-04 18:32:34.190911+00:00, run_duration=301.681, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=24, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:30.241725+00:00, queued_by_job_id=1, pid=19761
+2025-03-04 12:32:35,405 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-01T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:32.537031+00:00, run_end_date=2025-03-04 18:32:33.963876+00:00, run_duration=301.427, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=25, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:30.241725+00:00, queued_by_job_id=1, pid=19766
+2025-03-04 12:32:36,442 INFO - Setting next_dagrun for EtlWeather to 2025-03-02 00:00:00+00:00, run_after=2025-03-03 00:00:00+00:00
+2025-03-04 12:32:36,499 ERROR - Marking run <DagRun EtlWeather @ 2025-03-03 00:00:00+00:00: scheduled__2025-03-03T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:27.417166+00:00. externally triggered: False> failed
+2025-03-04 12:32:36,501 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-03 00:00:00+00:00, run_id=scheduled__2025-03-03T00:00:00+00:00, run_start_date=2025-03-04 18:27:27.558216+00:00, run_end_date=2025-03-04 18:32:36.500853+00:00, run_duration=308.942637, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-03-03 00:00:00+00:00, data_interval_end=2025-03-04 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:36,512 INFO - Setting next_dagrun for EtlWeather to 2025-03-04 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+2025-03-04 12:32:36,559 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-03T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:36,569 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-03T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:34.906018+00:00, run_end_date=2025-03-04 18:32:35.795121+00:00, run_duration=300.889, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=26, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:33.946952+00:00, queued_by_job_id=1, pid=19788
+2025-03-04 12:32:37,627 ERROR - Marking run <DagRun EtlWeather @ 2025-03-02 00:00:00+00:00: scheduled__2025-03-02T00:00:00+00:00, state:running, queued_at: 2025-03-04 18:27:25.008008+00:00. externally triggered: False> failed
+2025-03-04 12:32:37,628 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-02 00:00:00+00:00, run_id=scheduled__2025-03-02T00:00:00+00:00, run_start_date=2025-03-04 18:27:25.393793+00:00, run_end_date=2025-03-04 18:32:37.628708+00:00, run_duration=312.234915, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2025-03-02 00:00:00+00:00, data_interval_end=2025-03-03 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:32:37,639 INFO - Setting next_dagrun for EtlWeather to 2025-03-03 00:00:00+00:00, run_after=2025-03-04 00:00:00+00:00
+2025-03-04 12:32:37,677 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='scheduled__2025-03-02T00:00:00+00:00', try_number=1, map_index=-1)
+2025-03-04 12:32:37,687 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-02T00:00:00+00:00, map_index=-1, run_start_date=2025-03-04 18:27:34.926365+00:00, run_end_date=2025-03-04 18:32:36.431031+00:00, run_duration=301.505, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=27, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:27:33.946952+00:00, queued_by_job_id=1, pid=19790
+2025-03-04 12:32:38,014 INFO - Setting next_dagrun for EtlWeather to 2025-03-04 00:00:00+00:00, run_after=2025-03-05 00:00:00+00:00
+2025-03-04 12:34:20,347 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:36:35,454 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>
+2025-03-04 12:36:35,457 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 12:36:35,457 INFO - DAG EtlWeather has 1/16 running and queued tasks
+2025-03-04 12:36:35,458 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>
+2025-03-04 12:36:35,465 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:36:34.170450+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:36:35,493 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:36:34.170450+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:36:35,496 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:36:34.170450+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:36:35,498 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-04T18:36:34.170450+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:36:35,499 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:36:34.170450+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:36:35,703 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:36:34.170450+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:36:35,710 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:36:34.170450+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:36:36,792 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:36:36,786 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:36:40,361 INFO - Running <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:36:34.170450+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:36:40,363 INFO - Running <TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:36:34.170450+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:36:42,798 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:36:34.170450+00:00', try_number=1, map_index=-1)
+2025-03-04 12:36:42,808 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=manual__2025-03-04T18:36:34.170450+00:00, map_index=-1, run_start_date=2025-03-04 18:36:40.554451+00:00, run_end_date=2025-03-04 18:36:41.564138+00:00, run_duration=1.00969, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=28, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:36:35.459888+00:00, queued_by_job_id=1, pid=24154
+2025-03-04 12:39:07,971 INFO - Exiting gracefully upon receiving signal 15
+2025-03-04 12:39:08,902 INFO - Sending Signals.SIGTERM to group 15050. PIDs of all processes in the group: []
+2025-03-04 12:39:08,905 INFO - Sending the signal Signals.SIGTERM to group 15050
+2025-03-04 12:39:08,907 INFO - Sending the signal Signals.SIGTERM to process 15050 as process group is missing.
+2025-03-04 12:39:08,909 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-03-04 12:40:01,766 INFO - Sending Signals.SIGTERM to group 15050. PIDs of all processes in the group: []
+2025-03-04 12:40:01,767 INFO - Sending the signal Signals.SIGTERM to group 15050
+2025-03-04 12:40:01,768 INFO - Sending the signal Signals.SIGTERM to process 15050 as process group is missing.
+2025-03-04 12:40:01,770 INFO - Exited execute loop
+2025-03-04 12:40:23,387 INFO - Loaded executor: LocalExecutor
+2025-03-04 12:40:23,476 INFO - Starting the scheduler
+2025-03-04 12:40:23,478 INFO - Processing each file at most -1 times
+2025-03-04 12:40:24,461 INFO - Launched DagFileProcessorManager with pid: 27321
+2025-03-04 12:40:24,521 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:40:24,592 INFO - Configured default timezone UTC
+2025-03-04 12:40:25,673 ERROR - Marking run <DagRun EtlWeather @ 2025-03-04 18:36:34.170450+00:00: manual__2025-03-04T18:36:34.170450+00:00, state:running, queued_at: 2025-03-04 18:36:34.230739+00:00. externally triggered: True> failed
+2025-03-04 12:40:25,676 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-04 18:36:34.170450+00:00, run_id=manual__2025-03-04T18:36:34.170450+00:00, run_start_date=2025-03-04 18:36:35.204639+00:00, run_end_date=2025-03-04 18:40:25.676039+00:00, run_duration=230.4714, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 00:00:00+00:00, data_interval_end=2025-03-04 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:41:41,188 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>
+2025-03-04 12:41:41,189 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 12:41:41,190 INFO - DAG EtlWeather has 1/16 running and queued tasks
+2025-03-04 12:41:41,191 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>
+2025-03-04 12:41:41,199 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:41:40.776425+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:41:41,201 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:41:40.776425+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:41:41,203 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:41:40.776425+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:41:41,206 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-04T18:41:40.776425+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:41:41,207 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:41:40.776425+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:41:41,229 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:41:40.776425+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:41:41,230 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:41:40.776425+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:41:41,317 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:41:41,324 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:41:42,256 INFO - Running <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:41:40.776425+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:41:42,274 INFO - Running <TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:41:40.776425+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:41:43,562 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-04T18:41:40.776425+00:00', try_number=1, map_index=-1)
+2025-03-04 12:41:43,575 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=manual__2025-03-04T18:41:40.776425+00:00, map_index=-1, run_start_date=2025-03-04 18:41:42.399680+00:00, run_end_date=2025-03-04 18:41:43.148527+00:00, run_duration=0.748847, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=31, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:41:41.193756+00:00, queued_by_job_id=30, pid=27873
+2025-03-04 12:41:44,631 ERROR - Marking run <DagRun EtlWeather @ 2025-03-04 18:41:40.776425+00:00: manual__2025-03-04T18:41:40.776425+00:00, state:running, queued_at: 2025-03-04 18:41:40.817774+00:00. externally triggered: True> failed
+2025-03-04 12:41:44,633 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-04 18:41:40.776425+00:00, run_id=manual__2025-03-04T18:41:40.776425+00:00, run_start_date=2025-03-04 18:41:41.053367+00:00, run_end_date=2025-03-04 18:41:44.633178+00:00, run_duration=3.579811, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 00:00:00+00:00, data_interval_end=2025-03-04 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:41:44,675 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:41:40.776425+00:00', try_number=1, map_index=-1)
+2025-03-04 12:41:44,684 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=manual__2025-03-04T18:41:40.776425+00:00, map_index=-1, run_start_date=2025-03-04 18:41:42.425241+00:00, run_end_date=2025-03-04 18:41:43.408285+00:00, run_duration=0.983044, state=failed, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=32, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:41:41.193756+00:00, queued_by_job_id=30, pid=27874
+2025-03-04 12:45:25,310 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:46:37,142 INFO - 2 tasks up for execution:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+2025-03-04 12:46:37,145 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 12:46:37,146 INFO - DAG EtlWeather has 1/16 running and queued tasks
+2025-03-04 12:46:37,146 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+	<TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+2025-03-04 12:46:37,153 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>, <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:46:37,160 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 2 and queue default
+2025-03-04 12:46:37,162 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:37,163 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:46:37,164 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:37,229 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:37,229 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:37,601 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:46:37,601 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:46:39,557 INFO - Running <TaskInstance: EtlWeather.SendMessage manual__2025-03-04T18:46:35.938921+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:46:39,601 INFO - Running <TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:46:41,719 INFO - 1 tasks up for execution:
+	<TaskInstance: EtlWeather.StoreData manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+2025-03-04 12:46:41,722 INFO - DAG EtlWeather has 0/16 running and queued tasks
+2025-03-04 12:46:41,722 INFO - Setting the following tasks to queued state:
+	<TaskInstance: EtlWeather.StoreData manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>
+2025-03-04 12:46:41,727 INFO - Trying to enqueue tasks: [<TaskInstance: EtlWeather.StoreData manual__2025-03-04T18:46:35.938921+00:00 [scheduled]>] for executor: LocalExecutor(parallelism=32)
+2025-03-04 12:46:41,729 INFO - Sending TaskInstanceKey(dag_id='EtlWeather', task_id='StoreData', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1) to LocalExecutor with priority 1 and queue default
+2025-03-04 12:46:41,730 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'EtlWeather', 'StoreData', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:41,748 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='SendMessage', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1)
+2025-03-04 12:46:41,749 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='WeatherAPI', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1)
+2025-03-04 12:46:41,757 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=SendMessage, run_id=manual__2025-03-04T18:46:35.938921+00:00, map_index=-1, run_start_date=2025-03-04 18:46:39.821320+00:00, run_end_date=2025-03-04 18:46:41.093968+00:00, run_duration=1.27265, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=33, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:46:37.148126+00:00, queued_by_job_id=30, pid=30029
+2025-03-04 12:46:41,763 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=WeatherAPI, run_id=manual__2025-03-04T18:46:35.938921+00:00, map_index=-1, run_start_date=2025-03-04 18:46:39.863867+00:00, run_end_date=2025-03-04 18:46:41.335774+00:00, run_duration=1.47191, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=34, pool=default_pool, queue=default, priority_weight=2, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:46:37.148126+00:00, queued_by_job_id=30, pid=30031
+2025-03-04 12:46:41,781 INFO - QueuedLocalWorker running ['airflow', 'tasks', 'run', 'EtlWeather', 'StoreData', 'manual__2025-03-04T18:46:35.938921+00:00', '--local', '--subdir', 'DAGS_FOLDER/dataEngineering.py']
+2025-03-04 12:46:41,891 INFO - Filling up the DagBag from /home/dataScience/Projects/Pipeline/airflow/dags/dataEngineering.py
+2025-03-04 12:46:42,482 INFO - Running <TaskInstance: EtlWeather.StoreData manual__2025-03-04T18:46:35.938921+00:00 [queued]> on host IMNOTROY.
+2025-03-04 12:46:43,999 INFO - Marking run <DagRun EtlWeather @ 2025-03-04 18:46:35.938921+00:00: manual__2025-03-04T18:46:35.938921+00:00, state:running, queued_at: 2025-03-04 18:46:36.094492+00:00. externally triggered: True> successful
+2025-03-04 12:46:44,002 INFO - DagRun Finished: dag_id=EtlWeather, execution_date=2025-03-04 18:46:35.938921+00:00, run_id=manual__2025-03-04T18:46:35.938921+00:00, run_start_date=2025-03-04 18:46:37.001156+00:00, run_end_date=2025-03-04 18:46:44.002073+00:00, run_duration=7.000917, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-03-03 00:00:00+00:00, data_interval_end=2025-03-04 00:00:00+00:00, dag_hash=662dbb3b37cc54e5481749ff242966b7
+2025-03-04 12:46:44,032 INFO - Received executor event with state success for task instance TaskInstanceKey(dag_id='EtlWeather', task_id='StoreData', run_id='manual__2025-03-04T18:46:35.938921+00:00', try_number=1, map_index=-1)
+2025-03-04 12:46:44,040 INFO - TaskInstance Finished: dag_id=EtlWeather, task_id=StoreData, run_id=manual__2025-03-04T18:46:35.938921+00:00, map_index=-1, run_start_date=2025-03-04 18:46:42.627610+00:00, run_end_date=2025-03-04 18:46:43.187027+00:00, run_duration=0.559417, state=success, executor=LocalExecutor(parallelism=32), executor_state=success, try_number=1, max_tries=0, job_id=35, pool=default_pool, queue=default, priority_weight=1, operator=_PythonDecoratedOperator, queued_dttm=2025-03-04 18:46:41.724301+00:00, queued_by_job_id=30, pid=30058
+2025-03-04 12:50:25,467 INFO - Adopting or resetting orphaned tasks for active dag runs
+2025-03-04 12:54:15,354 INFO - Exiting gracefully upon receiving signal 15
+2025-03-04 12:54:16,173 INFO - Sending Signals.SIGTERM to group 27321. PIDs of all processes in the group: []
+2025-03-04 12:54:16,175 INFO - Sending the signal Signals.SIGTERM to group 27321
+2025-03-04 12:54:16,177 INFO - Sending the signal Signals.SIGTERM to process 27321 as process group is missing.
+2025-03-04 12:54:16,179 INFO - Shutting down LocalExecutor; waiting for running tasks to finish.  Signal again if you don't want to wait.
+2025-03-04 12:54:17,285 INFO - Sending Signals.SIGTERM to group 27321. PIDs of all processes in the group: []
+2025-03-04 12:54:17,291 INFO - Sending the signal Signals.SIGTERM to group 27321
+2025-03-04 12:54:17,304 INFO - Sending the signal Signals.SIGTERM to process 27321 as process group is missing.
+2025-03-04 12:54:17,306 INFO - Exited execute loop

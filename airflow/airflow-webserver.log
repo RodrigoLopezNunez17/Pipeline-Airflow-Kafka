@@ -5,3 +5,6 @@
 2025-03-03 12:30:19,866 INFO - Received signal: 15. Closing gunicorn.
 2025-03-03 13:07:58,545 INFO - Received signal: 15. Closing gunicorn.
 2025-03-03 14:00:15,521 INFO - Received signal: 15. Closing gunicorn.
+2025-03-04 12:12:51,026 INFO - Received signal: 15. Closing gunicorn.
+2025-03-04 12:39:08,056 INFO - Received signal: 15. Closing gunicorn.
+2025-03-04 12:54:15,410 INFO - Received signal: 15. Closing gunicorn.

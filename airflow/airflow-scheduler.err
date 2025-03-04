@@ -1,9 +1,9 @@
-[2025-03-03 13:08:21 -0600] [27267] [INFO] Starting gunicorn 23.0.0
-[2025-03-03 13:08:21 -0600] [27267] [INFO] Listening at: http://[::]:8793 (27267)
-[2025-03-03 13:08:21 -0600] [27267] [INFO] Using worker: sync
-[2025-03-03 13:08:21 -0600] [27268] [INFO] Booting worker with pid: 27268
-[2025-03-03 13:08:21 -0600] [27293] [INFO] Booting worker with pid: 27293
-[2025-03-03 14:00:16 -0600] [27267] [INFO] Handling signal: term
-[2025-03-03 14:00:17 -0600] [27293] [INFO] Worker exiting (pid: 27293)
-[2025-03-03 14:00:17 -0600] [27268] [INFO] Worker exiting (pid: 27268)
-[2025-03-03 14:00:17 -0600] [27267] [INFO] Shutting down: Master
+[2025-03-04 12:40:23 -0600] [27183] [INFO] Starting gunicorn 23.0.0
+[2025-03-04 12:40:23 -0600] [27183] [INFO] Listening at: http://[::]:8793 (27183)
+[2025-03-04 12:40:23 -0600] [27183] [INFO] Using worker: sync
+[2025-03-04 12:40:23 -0600] [27184] [INFO] Booting worker with pid: 27184
+[2025-03-04 12:40:23 -0600] [27185] [INFO] Booting worker with pid: 27185
+[2025-03-04 12:54:17 -0600] [27183] [INFO] Handling signal: term
+[2025-03-04 12:54:17 -0600] [27185] [INFO] Worker exiting (pid: 27185)
+[2025-03-04 12:54:17 -0600] [27184] [INFO] Worker exiting (pid: 27184)
+[2025-03-04 12:54:17 -0600] [27183] [INFO] Shutting down: Master

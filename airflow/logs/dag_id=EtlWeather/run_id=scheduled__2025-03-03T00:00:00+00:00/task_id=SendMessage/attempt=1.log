@@ -1,0 +1,38 @@
+[2025-03-04T11:54:48.280-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-04T11:54:48.336-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]>
+[2025-03-04T11:54:48.374-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]>
+[2025-03-04T11:54:48.375-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-04T11:54:48.436-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): SendMessage> on 2025-03-03 00:00:00+00:00
+[2025-03-04T11:54:48.457-0600] {standard_task_runner.py:72} INFO - Started process 1975 to run task
+[2025-03-04T11:54:48.471-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/dataEngineering.py', '--cfg-path', '/tmp/tmpzwtwys4z']
+[2025-03-04T11:54:48.475-0600] {standard_task_runner.py:105} INFO - Job 69: Subtask SendMessage
+[2025-03-04T11:54:48.835-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [running]> on host IMNOTROY.
+[2025-03-04T11:54:49.402-0600] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='EtlWeather' AIRFLOW_CTX_TASK_ID='SendMessage' AIRFLOW_CTX_EXECUTION_DATE='2025-03-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-03T00:00:00+00:00'
+[2025-03-04T11:54:49.420-0600] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-04T11:55:13.849-0600] {python.py:240} INFO - Done. Returned value was: Done!
+[2025-03-04T11:55:13.924-0600] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-04T11:55:13.925-0600] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-03T00:00:00+00:00, execution_date=20250303T000000, start_date=20250304T175448, end_date=20250304T175513
+[2025-03-04T11:55:14.061-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-04T11:55:14.092-0600] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-04T11:55:14.094-0600] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-03-04T12:27:34.866-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-04T12:27:34.905-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]>
+[2025-03-04T12:27:34.933-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [queued]>
+[2025-03-04T12:27:34.934-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-04T12:27:34.976-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): SendMessage> on 2025-03-03 00:00:00+00:00
+[2025-03-04T12:27:34.987-0600] {standard_task_runner.py:72} INFO - Started process 19788 to run task
+[2025-03-04T12:27:34.995-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-03-03T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/dataEngineering.py', '--cfg-path', '/tmp/tmpl6dbi1ki']
+[2025-03-04T12:27:35.002-0600] {standard_task_runner.py:105} INFO - Job 26: Subtask SendMessage
+[2025-03-04T12:27:35.148-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-03-03T00:00:00+00:00 [running]> on host IMNOTROY.
+[2025-03-04T12:27:35.363-0600] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='EtlWeather' AIRFLOW_CTX_TASK_ID='SendMessage' AIRFLOW_CTX_EXECUTION_DATE='2025-03-03T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-03T00:00:00+00:00'
+[2025-03-04T12:27:35.365-0600] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-04T12:28:44.925-0600] {job.py:229} INFO - Heartbeat recovered after 49.62 seconds
+[2025-03-04T12:29:05.372-0600] {job.py:229} INFO - Heartbeat recovered after 32.81 seconds
+[2025-03-04T12:30:22.073-0600] {job.py:229} INFO - Heartbeat recovered after 16.99 seconds
+[2025-03-04T12:32:12.099-0600] {job.py:229} INFO - Heartbeat recovered after 118.69 seconds
+[2025-03-04T12:32:35.586-0600] {python.py:240} INFO - Done. Returned value was: Done!
+[2025-03-04T12:32:35.789-0600] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-04T12:32:35.796-0600] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-03-03T00:00:00+00:00, execution_date=20250303T000000, start_date=20250304T182734, end_date=20250304T183235
+[2025-03-04T12:32:35.932-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-04T12:32:35.987-0600] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-04T12:32:35.989-0600] {local_task_job_runner.py:245} INFO - ::endgroup::

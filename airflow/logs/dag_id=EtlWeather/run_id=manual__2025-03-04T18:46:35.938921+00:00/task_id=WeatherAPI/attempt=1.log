@@ -1,0 +1,17 @@
+[2025-03-04T12:46:39.799-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-04T12:46:39.862-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [queued]>
+[2025-03-04T12:46:39.892-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [queued]>
+[2025-03-04T12:46:39.894-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-04T12:46:39.966-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): WeatherAPI> on 2025-03-04 18:46:35.938921+00:00
+[2025-03-04T12:46:39.991-0600] {standard_task_runner.py:72} INFO - Started process 30031 to run task
+[2025-03-04T12:46:40.015-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'EtlWeather', 'WeatherAPI', 'manual__2025-03-04T18:46:35.938921+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/dataEngineering.py', '--cfg-path', '/tmp/tmpkqjg3k6w']
+[2025-03-04T12:46:40.019-0600] {standard_task_runner.py:105} INFO - Job 34: Subtask WeatherAPI
+[2025-03-04T12:46:40.311-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.WeatherAPI manual__2025-03-04T18:46:35.938921+00:00 [running]> on host IMNOTROY.
+[2025-03-04T12:46:40.661-0600] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='EtlWeather' AIRFLOW_CTX_TASK_ID='WeatherAPI' AIRFLOW_CTX_EXECUTION_DATE='2025-03-04T18:46:35.938921+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-03-04T18:46:35.938921+00:00'
+[2025-03-04T12:46:40.664-0600] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-04T12:46:41.202-0600] {python.py:240} INFO - Done. Returned value was: {'dt': 1741113954, 'sunrise': 1741092820, 'sunset': 1741135380, 'temp': 298.7, 'feels_like': 298.02, 'pressure': 1011, 'humidity': 27, 'dew_point': 278.34, 'uvi': 11.99, 'clouds': 0, 'visibility': 10000, 'wind_speed': 3.09, 'wind_deg': 270, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01d'}]}
+[2025-03-04T12:46:41.334-0600] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-04T12:46:41.335-0600] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=EtlWeather, task_id=WeatherAPI, run_id=manual__2025-03-04T18:46:35.938921+00:00, execution_date=20250304T184635, start_date=20250304T184639, end_date=20250304T184641
+[2025-03-04T12:46:41.439-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-04T12:46:41.499-0600] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-04T12:46:41.513-0600] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+[2025-03-04T12:27:26.566-0600] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-03-04T12:27:26.748-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [queued]>
+[2025-03-04T12:27:26.826-0600] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [queued]>
+[2025-03-04T12:27:26.827-0600] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-03-04T12:27:27.024-0600] {taskinstance.py:2890} INFO - Executing <Task(_PythonDecoratedOperator): SendMessage> on 2025-02-26 00:00:00+00:00
+[2025-03-04T12:27:27.050-0600] {standard_task_runner.py:72} INFO - Started process 19673 to run task
+[2025-03-04T12:27:27.126-0600] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'EtlWeather', 'SendMessage', 'scheduled__2025-02-26T00:00:00+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/dataEngineering.py', '--cfg-path', '/tmp/tmpq4g1r91q']
+[2025-03-04T12:27:27.136-0600] {standard_task_runner.py:105} INFO - Job 7: Subtask SendMessage
+[2025-03-04T12:27:27.782-0600] {task_command.py:467} INFO - Running <TaskInstance: EtlWeather.SendMessage scheduled__2025-02-26T00:00:00+00:00 [running]> on host IMNOTROY.
+[2025-03-04T12:27:28.678-0600] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='EtlWeather' AIRFLOW_CTX_TASK_ID='SendMessage' AIRFLOW_CTX_EXECUTION_DATE='2025-02-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-26T00:00:00+00:00'
+[2025-03-04T12:27:28.686-0600] {taskinstance.py:732} INFO - ::endgroup::
+[2025-03-04T12:28:54.944-0600] {job.py:229} INFO - Heartbeat recovered after 56.64 seconds
+[2025-03-04T12:29:13.614-0600] {job.py:229} INFO - Heartbeat recovered after 28.71 seconds
+[2025-03-04T12:30:23.351-0600] {job.py:229} INFO - Heartbeat recovered after 17.42 seconds
+[2025-03-04T12:32:12.075-0600] {job.py:229} INFO - Heartbeat recovered after 118.66 seconds
+[2025-03-04T12:32:29.735-0600] {python.py:240} INFO - Done. Returned value was: Done!
+[2025-03-04T12:32:31.362-0600] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-03-04T12:32:31.384-0600] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=EtlWeather, task_id=SendMessage, run_id=scheduled__2025-02-26T00:00:00+00:00, execution_date=20250226T000000, start_date=20250304T182726, end_date=20250304T183231
+[2025-03-04T12:32:32.261-0600] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-03-04T12:32:32.381-0600] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-04T12:32:32.385-0600] {local_task_job_runner.py:245} INFO - ::endgroup::

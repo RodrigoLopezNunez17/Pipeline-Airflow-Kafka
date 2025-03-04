@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, date
 from airflow import DAG
 from airflow.decorators import task
 from confluent_kafka import Producer
@@ -25,7 +25,6 @@ def WeatherAPI() -> dict:
     if response.status_code == 200:
         data = response.json()
         data = data['current']
-        logging.info("Data gotten succesfully!")
         return data
     else:
         return "Error!"
@@ -56,9 +55,9 @@ def StoreData(data : dict) -> None:
                     logging.info(f"\n The table 'WeatherData' is not created yet!\n")
                 elif anyWeatherData:
                     cursor.execute(f"""
-                                        INSERT INTO Weather.WeatherData (Temperature_C, Pressure, Humidity, UVI, Visibility, WindSpeed, WindDegree)
-                                        VALUES (%s{", %s" * 6})
-                                        """, (kelvin_to_celsius(data['temp']), data['pressure'], data['humidity'], data['uvi'], data['visibility'], data['wind_speed'], data['wind_deg']))
+                                        INSERT INTO Weather.WeatherData (Temperature_C, Pressure, Humidity, UVI, Visibility, WindSpeed, WindDegree, Date)
+                                        VALUES (%s{", %s" * 7})
+                                        """, (kelvin_to_celsius(data['temp']), data['pressure'], data['humidity'], data['uvi'], data['visibility'], data['wind_speed'], data['wind_deg'], date.today()))
                     logging.info("Data stored succesfully!")
         cnx.commit()
 
@@ -72,4 +71,4 @@ with DAG(
 
     storeData = StoreData(weatherAPI)
 
-    SendMessage = SendMessage()
+    sendMessage = SendMessage()
