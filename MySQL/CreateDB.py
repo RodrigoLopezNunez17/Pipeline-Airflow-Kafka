@@ -40,9 +40,11 @@ with mysql.connector.connect(database='Weather', **config) as cnx:
                     UVI FLOAT NOT NULL,
                     Visibility FLOAT NOT NULL,
                     WindSpeed FLOAT NOT NULL,
-                    WindDegree FLOAT NOT NULL
+                    WindDegree FLOAT NOT NULL,
+                    Date DATE NOT NULL
                     );
                 """)
+        
         else:
             table = False
             # print("The table 'WeatherData' already exists!")
