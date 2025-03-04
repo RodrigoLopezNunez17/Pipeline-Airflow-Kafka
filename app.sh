@@ -9,9 +9,13 @@
 
 python MySQL/CreateDB.py
 
+sleep 2
+
 # First of all, i need to initialize the airflow server
 
 source airflow/airflow-start.sh
+
+sleep 2
 
 # Then i need to initialize the kakfka server so that i need to initialize the zookeeper server first
 
