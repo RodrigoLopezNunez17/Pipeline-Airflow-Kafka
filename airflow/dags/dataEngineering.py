@@ -19,7 +19,7 @@ def SendMessage() -> None:
 
 @task(task_id = "WeatherAPI")
 def WeatherAPI() -> dict:
-    url = ""
+    url = "https://api.openweathermap.org/data/3.0/onecall?lat=: 19.4326&lon=-99.1332&appid=7268c495c33b59fb722943fe931c8aa1"
     response  = requests.get(url)
 
     if response.status_code == 200:
